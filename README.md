@@ -106,7 +106,7 @@ These are proposed checks, **not completed test results**.
 - Which plant and pot should the design fit?
 - Should the status module remain a separate box or eventually attach to the sleeve?
 - What is our budget, first prototype date and final division of work?
-- Who will host the GitHub repository, and should it be private or public?
+- Which teammates should get access to the private GitHub repository, and should it eventually become public?
 
 Possible later extensions: a small display, recorded measurements or automatic watering. The first milestone is a reliable manual-watering reminder.
 
@@ -123,20 +123,19 @@ models/mesh-validation.json Digital STL geometry checks
 knives/TEMPLATE.md           Template for future knowledge entries
 ```
 
-No firmware is included at this stage. There is no deployed website or configured GitHub remote. Rendering of this README on GitHub will work after uploading the repository; its image and model links are relative.
+No firmware is included at this stage. The project is hosted in the private [figaro112/plant-signal GitHub repository](https://github.com/figaro112/plant-signal). This README is the main project page; there is no separately deployed website.
 
 ## Sharing the idea
 
-The supplied project folder is an initialized local Git repository on branch `main`, with an initial concept commit. Open this README for the English overview or the Slovak meeting brief for tomorrow's discussion.
+The project uses branch `main`. Open this README for the English overview or the Slovak meeting brief for tomorrow's discussion.
 
-To publish later, create an empty repository in your chosen GitHub account, agree its visibility with the team, then run these commands inside this project folder, replacing `OWNER` with the actual account:
+Teammates with repository access can clone it using:
 
 ```sh
-git remote add origin https://github.com/OWNER/plant-signal.git
-git push -u origin main
+git clone https://github.com/figaro112/plant-signal.git
 ```
 
-GitHub authentication and permission to the destination are required. No repository has been created on GitHub by this package.
+The repository is private. Its owner can grant teammates access in GitHub repository settings; GitHub authentication is required to clone it.
 
 ## References
 

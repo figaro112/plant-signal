@@ -49,6 +49,6 @@ Každý bude mať aj vlastný KNIFE príspevok. Dokumentáciu a integráciu rie�
 2. Čo vieme dostať v laboratóriu a čo treba kúpiť?
 3. Aký kvetináč a rastlinu použijeme?
 4. Ako rozdelíme prácu a kedy chceme prvý prototyp?
-5. Kto vytvorí GitHub repozitár a akú bude mať viditeľnosť?
+5. Aké GitHub účty majú kolegovia, aby im vlastník sprístupnil súkromný repozitár [figaro112/plant-signal](https://github.com/figaro112/plant-signal)?
 
 Čerpadlo, Wi-Fi alebo displej môžu prísť neskôr. Na začiatok sa sústredíme na overené meranie a dve kontrolky.
