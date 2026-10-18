@@ -1,0 +1,7 @@
+* text=auto
+*.md text eol=lf
+*.scad text eol=lf
+*.json text eol=lf
+*.stl binary
+*.glb binary
+*.png binary

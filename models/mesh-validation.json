@@ -1,0 +1,74 @@
+{
+  "sleeve": {
+    "watertight": true,
+    "connected_components": 1,
+    "bounds_mm": [
+      [
+        -72.0,
+        -72.0,
+        0.0
+      ],
+      [
+        72.0,
+        72.0,
+        130.0
+      ]
+    ],
+    "volume_mm3": 217135.1,
+    "triangles": 1296
+  },
+  "electronics-base": {
+    "watertight": true,
+    "connected_components": 1,
+    "bounds_mm": [
+      [
+        -50.0,
+        -34.0,
+        0.0
+      ],
+      [
+        50.0,
+        34.0,
+        35.0
+      ]
+    ],
+    "volume_mm3": 55857.9,
+    "triangles": 1168
+  },
+  "electronics-lid": {
+    "watertight": true,
+    "connected_components": 1,
+    "bounds_mm": [
+      [
+        -50.0,
+        -34.0,
+        0.0
+      ],
+      [
+        50.0,
+        34.0,
+        3.0
+      ]
+    ],
+    "volume_mm3": 20159.9,
+    "triangles": 868
+  },
+  "sensor-clip": {
+    "watertight": true,
+    "connected_components": 1,
+    "bounds_mm": [
+      [
+        -15.5,
+        -78.0,
+        0.0
+      ],
+      [
+        15.5,
+        -48.0,
+        21.0
+      ]
+    ],
+    "volume_mm3": 5188.0,
+    "triangles": 98
+  }
+}
