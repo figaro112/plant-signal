@@ -1,146 +1,95 @@
-# PlantSignal 🌱
+# PlantSignal 🌱 — STHDF 2026–2027
 
-**A desk plant pot that tells you when its soil is getting dry.**
+**A desk plant pot that reminds its user to check dry soil.**
 
-![PlantSignal concept: printed sleeve, removable soil probe and separate LED status module](assets/hero.png)
-
-> **Status: project idea / concept 01.** Prepared for a team discussion on **20 October 2026**. The CAD model has not been printed or fitted to real hardware. Electronics, firmware and measurements have not been implemented.
+![PlantSignal digital concept](assets/hero.png)
 
 **Team:** Marek Hužvar · Matuš Plško · Richard Sič  
-**[Slovenské zhrnutie na stretnutie →](docs/PROJECT_BRIEF.sk.md)** · **[3D files →](models/README.md)** · **[KNIFE template →](knives/TEMPLATE.md)**
+**Working project ID:** `PRJ-TBD-PlantSignal` — no official project number assigned yet.  
+**Status:** concept and digital CAD; electronics, printing, calibration and physical tests have not started.  
+**Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), private.
 
-## The idea
+This repository follows the [official STHDF class template](https://github.com/06-STH-Projects/2026_sthdf_class_template) referenced by [K000119 — class repository setup](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/). PlantSignal's existing history and CAD are preserved; upstream Git history is not imported.
 
-It is easy to forget a small plant on a busy desk. PlantSignal would monitor the moisture of its substrate and display a simple reminder:
+**[English project dashboard →](content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md)** · **[Slovenský rozcestník →](content/docs/sk/sthdf/PRJ-TBD-PlantSignal/index.md)** · **[Slovenské zhrnutie →](docs/PROJECT_BRIEF.sk.md)**
 
-- 🔴 **Red:** the calibrated dry threshold has been reached; check whether the plant needs watering.
-- 🟢 **Green:** the reading is above the selected moisture threshold.
+## Seven required sections
 
-The intended first version uses a **capacitive soil moisture sensor**, an **Arduino Uno R3** and **two LEDs**, powered over USB. A printed sleeve gives the project its own appearance; a removable clip holds the probe; a separate enclosure keeps the controller away from the pot and saucer. Watering remains manual.
-
-This is a prototype reminder for one selected plant and substrate. It is not a precision soil-water instrument, and green does not mean that every growing condition is healthy.
-
-## The physical concept
-
-| Part | Purpose | Concept dimensions |
+| # | Deliverable | Current state |
 |---|---|---|
-| Printed outer sleeve | Decorative cover around a purchased pot and saucer | Ø144 × 130 mm; Ø138 mm cavity; 3 mm wall and floor |
-| Purchased inner pot | Holds the substrate and plant | Assumed maximum Ø120 × 110 mm |
-| Purchased saucer | Collects drainage water inside the sleeve | Assumed maximum Ø128 × 15 mm |
-| Removable sensor clip | Holds the probe at a repeatable depth | 6 mm rim gap; 25 × 3.2 mm probe slot |
-| Electronics base | Separate tabletop box for the controller | 100 × 68 × 35 mm; 3 mm walls |
-| Electronics lid | Carries two status LEDs | 100 × 68 × 3 mm; two Ø5.3 mm LED holes |
+| 01 | [About Me](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/about-me/index.md) | Three member profiles; personal details and ST IDs pending |
+| 02 | [Knowledge Contribution](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/knowledge-contribution/index.md) | Two local KNIFE drafts |
+| 03 | [Project Summary](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/project-summary/index.md) | Scope, team, proposed milestones and risks |
+| 04 | [Project Outcomes](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/project-outcomes/index.md) | Digital outputs; physical results pending |
+| 05 | [Pitch Presentation](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/pitch-presentation/index.md) | Draft outline; no completed slide deck |
+| 06 | [Final Presentation](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/final-presentation/index.md) | Not started |
+| 07 | [Reflexia / Reflection](content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/reflexia/index.md) | Prompts for each member; not started |
 
-The sleeve has four drain holes and **must not be treated as a watertight container**. Use a bought watertight saucer and keep the sleeve on a surface that tolerates accidental drips. The electronics enclosure is not waterproof.
+## Project work and physical concept
 
-![Exploded view of the four printable concept parts](assets/parts-render.png)
+- [7Ds — management and learning](content/docs/en/sthdf/PRJ-TBD-PlantSignal/projects/7ds/index.md)
+- [SDLC — technical lifecycle](content/docs/en/sthdf/PRJ-TBD-PlantSignal/projects/sdlc/index.md)
+- [Q12 — product and value perspectives](content/docs/en/sthdf/PRJ-TBD-PlantSignal/projects/q12/index.md)
+- [Full concept and component list](docs/CONCEPT.en.md)
+- [3D model guide and STL downloads](models/README.md)
+- [GLB assembly](models/assembly-concept.glb) · [Editable OpenSCAD](models/plant-signal.scad)
 
-**[Download STL parts](models/stl/)** · **[Editable OpenSCAD source](models/plant-signal.scad)** · **[3D assembly in GLB format](models/assembly-concept.glb)**
+The intended MVP uses a capacitive soil probe, an Arduino Uno R3 and two LEDs, powered over USB. A printed sleeve surrounds a purchased liner and saucer; a removable clip holds the probe, and a separate box houses the controller. Watering remains manual. Dimensions are assumptions until checked against actual hardware.
 
-The GLB includes illustrative objects for the plant, liner, soil, sensor and LEDs. Only the four STL files represent printable parts. Hole sizes, connector positions, board mounting and clip retention need checking against purchased hardware.
+## KNIFE contributions
 
-## What we would need
+- [K-LOCAL-001 — preparing a measurable 3D pot concept](content/docs/en/knifes/K-LOCAL-001-PlantSignal-3D-Concept/index.md)
+- [K-LOCAL-002 — adapting an existing project to STHDF](content/docs/en/knifes/K-LOCAL-002-STHDF-Repository-Setup/index.md)
 
-| Item | Quantity | Notes |
-|---|---:|---|
-| Arduino Uno R3 | 1 | Check whether the lab can lend one; another board would require adapting the enclosure |
-| Capacitive analog soil moisture sensor | 1 + optional spare | Choose a specific variant before finalizing voltage, wiring and probe dimensions |
-| Red LED + green LED | 1 each | Concept assumes 5 mm round LEDs |
-| 330 Ω resistors | 2 | One for each LED in the proposed Uno circuit |
-| Breadboard + jumper wires | 1 set | Prototype without soldering |
-| USB cable + suitable USB power supply | 1 each | Match the actual board connector |
-| Pot, saucer, substrate and plant | 1 set | Measure the real pot and saucer before printing |
-| PLA or PETG filament | As needed | For an indoor concept; verify printer settings locally |
-| Enclosure screws | 4 | Concept uses Ø3.4 mm lid clearance holes and Ø2.6 mm pilot holes; trial-fit the selected screws |
+These are repository-local draft identifiers, not allocated global KNIFE numbers. No hardware experiment or completed personal contribution is claimed. The original [simple KNIFE template](knives/TEMPLATE.md) is retained for reference.
 
-**Sensor price reference, checked on 19 October 2026:** [Drotik Elektro lists a V1.2 analog capacitive probe at €1.35 including VAT](https://www.drotik-elektro.sk/arduino-platforma/4875-podny-analogovy-vlhkomer-s-antikoroznou-sondou-v1.2.html), excluding delivery. It is a generic alternative to the DFRobot SEN0193, not the same product. Prices, availability and specifications may change. The full project budget is still to be agreed after checking lab stock.
-
-## Why this fits the course
-
-- **Physical output:** a designed, printed and assembled desk object.
-- **Sensing and measurement:** observe how a probe responds to the selected substrate.
-- **System modelling:** describe the user, components, states and interfaces before implementation.
-- **Iteration:** improve the clip, enclosure and threshold using evidence from the prototype.
-- **Knowledge sharing:** publish short English KNIFE entries with real observations, photos and model revisions.
-
-Use the modelling tools requested by the course for the system model when implementation starts. This repository currently contains the idea and mechanical concept only.
-
-## Suggested team split — to agree together
-
-| Team member | Proposed focus | Possible KNIFE topic |
-|---|---|---|
-| Marek Hužvar | CAD, print preparation and mechanical fit | Designing a removable probe clip |
-| Matuš Plško | Sensor connection and later Arduino implementation | Reading a capacitive soil sensor |
-| Richard Sič | Calibration, experiments and presentation | Selecting and validating a dry threshold |
-
-Everyone contributes to requirements, assembly and shared documentation. These are proposed roles, not confirmed assignments.
-
-## A manageable first version
-
-1. **Agree on the concept.** Choose one plant, check lab equipment and measure the actual parts.
-2. **Prove the sensor on the bench.** Read values in dry and watered samples of the same substrate.
-3. **Create the reminder.** Add two LEDs, averaging and a small hysteresis band to avoid flickering near a threshold.
-4. **Revise and print.** Fit-test a small clip sample first, then adapt the enclosure and print the remaining parts.
-5. **Demonstrate and document.** Record measurements and show how feedback changed the design.
-
-Thresholds must be established for the selected substrate and plant. Any displayed percentage would be a relative calibration scale unless independently validated. No measured threshold is available yet.
-
-## Planned demonstration and evidence
-
-Prepare dry and watered samples of the **same substrate**, with comparable packing and the same probe insertion depth. Let readings settle after moving the probe. Show the raw readings and the corresponding LED state. Repeat the comparison to check that the result is reproducible.
-
-Before calling the project complete, we would want evidence that:
-
-- The purchased components fit and the USB connector is accessible.
-- The probe stays at a repeatable depth and its electronics remain above soil and water.
-- The dry and watered samples can be distinguished consistently after calibration.
-- The light does not flicker around the selected threshold.
-- The finished assembly can be carried to a presentation without loose connections.
-
-These are proposed checks, **not completed test results**.
-
-## Decisions for the first team meeting
-
-- Do we all want to build this project?
-- Which board, probe and printer are already available in the lab?
-- Which plant and pot should the design fit?
-- Should the status module remain a separate box or eventually attach to the sleeve?
-- What is our budget, first prototype date and final division of work?
-- Which teammates should get access to the private GitHub repository, and should it eventually become public?
-
-Possible later extensions: a small display, recorded measurements or automatic watering. The first milestone is a reliable manual-watering reminder.
-
-## Repository contents
+## Repository layout
 
 ```text
-README.md                    Main project page (English)
-docs/PROJECT_BRIEF.sk.md      Short Slovak meeting brief
-assets/                      Images rendered from the 3D geometry
-models/plant-signal.scad     Editable mechanical concept
-models/stl/                  Four separate printable concept parts
-models/assembly-concept.glb  Assembly with illustrative context objects
-models/mesh-validation.json Digital STL geometry checks
-knives/TEMPLATE.md           Template for future knowledge entries
+content/docs/en/sthdf/PRJ-TBD-PlantSignal/
+  index.md              Project dashboard
+  students/             Seven sections and member profiles
+  projects/7ds/         Management and learning
+  projects/sdlc/        Nine-stage technical lifecycle
+  projects/q12/         Product and value perspectives
+content/docs/en/knifes/ Two local project KNIFEs and upstream reference index
+content/docs/sk/sthdf/  Slovak entry point
+core/                  Official tools and source templates
+config/plant-signal/   Project-specific metadata and generator settings
+publishing/docusaurus/ Optional documentation renderer
+models/                Original CAD, STL and GLB files
+assets/                Original illustrations
+docs/                  Concept, Slovak brief and migration record
 ```
 
-No firmware is included at this stage. The project is hosted in the private [figaro112/plant-signal GitHub repository](https://github.com/figaro112/plant-signal). This README is the main project page; there is no separately deployed website.
+Imported examples are reference material, not team achievements. Unstarted project sections are explicitly marked as planning placeholders.
 
-## Sharing the idea
+## Checks and optional documentation preview
 
-The project uses branch `main`. Open this README for the English overview or the Slovak meeting brief for tomorrow's discussion.
+```sh
+python tools/check-plant-signal.py
+python tools/prepare-plant-signal-site.py
+cd publishing/docusaurus
+npm ci
+npm run build -- --config docusaurus.plant-signal.config.ts
+```
 
-Teammates with repository access can clone it using:
+The optional configuration renders only this project's documentation and does not deploy a website. Upstream generator instructions are retained in [STHDF_TEMPLATE_README.md](docs/STHDF_TEMPLATE_README.md); its original relative links refer to the upstream repository.
+
+## Next steps
+
+1. Obtain the official project number and individual ST roster IDs; replace temporary identifiers consistently.
+2. Complete personal profiles, agree responsibilities and review project scope.
+3. Check lab stock and measure actual hardware before printing.
+4. Implement and test; add real evidence and personal reflections as work progresses.
+5. Share the repository link as instructed. The teacher handles class-dashboard integration; this repository does not push to the template or class repository.
+
+No firmware is included. The repository remains private; no website is published. Teammates need access to clone it:
 
 ```sh
 git clone https://github.com/figaro112/plant-signal.git
 ```
 
-The repository is private. Its owner can grant teammates access in GitHub repository settings; GitHub authentication is required to clone it.
+## Provenance
 
-## References
-
-- [DFRobot SEN0193 documentation](https://wiki.dfrobot.com/sen0193/) — an example capacitive sensor with documented specifications.
-- [DFRobot calibration guide](https://wiki.dfrobot.com/sen0193/docs/18037) — reference readings, insertion conditions and limits on water exposure. Apply actual purchased-sensor specifications.
-- [Arduino Analog Read Serial](https://docs.arduino.cc/built-in-examples/basics/AnalogReadSerial/) — a starting point for the later sensing experiment.
-
-The design in this repository is a newly created concept, not a downloaded third-party STL. Publication licensing should be agreed by the team before public release.
+Imported template snapshot: `d30dd1dfe166e97d95ad7ffca26d84ca73fa2b64`. See [migration notes](docs/TEMPLATE_MIGRATION.md). Upstream code retains its [MIT license](LICENSE); documentation attribution is retained with [LICENSE-DOCS](LICENSE-DOCS). The original FM-Core remains unchanged, with separate project metadata settings.

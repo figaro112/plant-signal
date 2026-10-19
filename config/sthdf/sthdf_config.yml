@@ -1,0 +1,19 @@
+# 🎓 STHDF-SPECIFIC CONFIG
+dao: "sthdf"
+content_dir: "content/docs/sk/sthdf"
+template_fm: "core/templates/system/FM-Core.md"
+
+# default header/body pre prípad, že v templatoch nie sú kotvy
+template_header: "core/templates/content/sthdf/headers/default-header.md"
+template_root: "core/templates/content/sthdf/body/students/index.md"
+
+id_prefix: "sthdf"
+locale: "sk"
+
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"
+  privacy: "public"
+
+
+

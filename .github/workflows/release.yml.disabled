@@ -1,0 +1,80 @@
+name: release
+permissions:
+  contents: write
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build (tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: npm run build
+        env:
+          APP_VERSION: ${{ github.ref_name }}
+
+      - name: Build (branch/PR)
+        if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
+        run: npm run build
+        env:
+          APP_VERSION: snapshot-${{ github.ref_name }}-${{ github.sha }}
+
+      - name: Zip build output
+        env:
+          REF_NAME: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+          GITHUB_REF: ${{ github.ref }}
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            NAME="knife-site-$REF_NAME.zip"
+          else
+            SHORT=${SHA:0:7}
+            NAME="knife-site-$REF_NAME-$SHORT.zip"
+          fi
+          (cd build && zip -r "../$NAME" .)
+          echo "ZIP=$NAME" >> $GITHUB_ENV
+
+      - name: Compute timestamp
+        id: ts
+        run: echo "ts=$(date -u +'%Y%m%d-%H%M%SZ')" >> $GITHUB_OUTPUT
+
+      - name: Upload preview artifact (non-tag)
+        if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview-${{ github.ref_name }}
+          path: build
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.RELEASE_TOKEN }}
+          tag_name: ${{ github.ref_name }}
+          name: "${{ github.ref_name }} – ${{ steps.ts.outputs.ts }}"
+          generate_release_notes: true
+          make_latest: true
+          draft: false
+          fail_on_unmatched_files: true
+          files: ${{ env.ZIP }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

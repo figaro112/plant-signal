@@ -1,0 +1,3 @@
+HEADER
+"DATA START"
+ID,display_id,GUID,DID,DAO,ShortTitle,Category,Type,Status,Priority,Created [YYYY-MM-DD],Author,Authors,Tags,Description,Context_Origin_WhyItWasInitiated,Technology,SFIA_Level,SFIA_Domain,SFIA_Maturity,Related_KNIFE,PotentialOutputs,Owner,Org,Project,Locale,FolderName,SidebarLabel,LinkSlug,Copyright,RightsHolderContent,RightsHolderSystem,License,Disclaimer

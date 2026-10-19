@@ -1,0 +1,42 @@
+name: Deploy Docusaurus → gh-pages-docusaurus
+
+on:
+  push:
+    branches: [ main ]  # alebo tvoja vetva
+
+permissions:
+  contents: write  # dôležité pre push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          # odstráň cache: 'npm' ak nemáš lock file (viď poznámka nižšie)
+
+      - name: Install deps
+        run: npm ci
+        working-directory: publishing/docusaurus
+
+      - name: Build Docusaurus
+        run: npm run build
+        working-directory: publishing/docusaurus
+
+      - name: Deploy to gh-pages-docusaurus/docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}     # <<< toto chýbalo
+          publish_branch: gh-pages-docusaurus
+          publish_dir: publishing/docusaurus/build
+          destination_dir: docs                         # Pages má v nastavení /docs
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          # force_orphan: true  # iba pri úplne prvom nasadení tejto vetvy
+          # cname: knifes.systemthinking.sk  # ak používaš custom domain

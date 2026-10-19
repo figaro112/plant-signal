@@ -1,0 +1,15 @@
+# ⚙️ SDLC-SPECIFIC CONFIG
+dao: "sdlc"
+content_dir: "content/docs/sk/sdlc"
+template_fm: "core/templates/system/FM-Core.md"
+
+template_header: "core/templates/content/sdlc/header/sdlc-user-header.md"
+template_root: "core/templates/content/sdlc/body"
+
+id_prefix: "sdlc"
+locale: "sk"
+
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"
+  privacy: "public"

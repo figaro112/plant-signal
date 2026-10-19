@@ -1,0 +1,56 @@
+{
+  "schema_id": "fm-core-1.0.1",
+  "required": [
+    "fm_version","fm_build","fm_version_comment",
+    "id","guid","dao","title","description",
+    "author","authors",
+    "category","type","priority","tags",
+    "slug","locale","sidebar_label",
+    "created","modified","status",
+    "rights_holder_content","rights_holder_system",
+    "license","disclaimer","copyright",
+    "origin_repo","origin_repo_url","origin_commit","origin_system",
+    "author_id","author_did",
+    "fm_reserved1","fm_reserved2"
+  ],
+  "defaults": {
+    "fm_version": "1.0.1",
+    "fm_build": "",
+    "fm_version_comment": "",
+    "description": "",
+    "authors": ["", "", ""],
+    "priority": "",
+    "tags": ["", ""],
+    "slug": "",
+    "locale": "sk",
+    "sidebar_label": "",
+    "modified": "",
+    "status": "",
+    "rights_holder_content": "",
+    "rights_holder_system": "Roman Kazička (CAA/KNIFE/LetItGrow)",
+    "license": "CC-BY-NC-SA-4.0",
+    "disclaimer": "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.",
+    "copyright": "© 2025 Roman Kazička / SystemThinking",
+    "origin_repo": "",
+    "origin_repo_url": "",
+    "origin_commit": "",
+    "origin_system": "",
+    "author_id": "",
+    "author_did": "",
+    "fm_reserved1": "",
+    "fm_reserved2": ""
+  },
+  "patterns": {
+    "guid": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$",
+    "created": "^\\d{4}-\\d{2}-\\d{2}$",
+    "modified": "^(|\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?Z?)?)$"
+  },
+  "enums": {
+    "dao": ["knife","class","project"],
+    "priority": ["","top","middle","low","no"],
+    "locale": ["sk","en","other"],
+    "status": ["","backlog","inprogress","done","archived","other"]
+  },
+  "add_only": true,
+  "preserve_unknown_keys": true
+}

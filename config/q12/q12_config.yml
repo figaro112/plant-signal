@@ -1,0 +1,16 @@
+# 🎓 Q12-SPECIFIC CONFIG
+dao: "q12"
+content_dir: "content/docs/sk/q12"
+template_fm: "core/templates/system/FM-Core.md"
+
+template_header: "core/templates/content/q12/header/q12-user-header.md"
+template_root: "core/templates/content/q12/body"
+
+
+id_prefix: "q12"
+locale: "sk"
+
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"
+  privacy: "public"

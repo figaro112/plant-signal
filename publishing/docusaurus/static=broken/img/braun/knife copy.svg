@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" width="120" height="72">
+  <!-- Telo nožíka -->
+  <rect x="10" y="20" width="60" height="20" rx="5" fill="#5C4033" />
+
+  <!-- Dekoratívny kríž (už nie biely, ale žltý) -->
+  <rect x="35" y="25" width="10" height="4" fill="#FFD700"/>
+  <rect x="38" y="22" width="4" height="10" fill="#FFD700"/>
+
+  <!-- Čepeľ -->
+  <rect x="70" y="23" width="20" height="14" rx="2" fill="#CCCCCC" stroke="#888" stroke-width="1"/>
+
+  <!-- Krúžok/otvor na kľúče -->
+  <circle cx="15" cy="30" r="3" fill="#FFD700"/>
+</svg>

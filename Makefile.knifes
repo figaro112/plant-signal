@@ -1,0 +1,24 @@
+# Makefile.knifes — standalone (no fragments). Call with: make -f Makefile.knifes <target>
+# Safe defaults: seed-only, skip existing KNIFEs, no overwrites.
+
+.PHONY: knife-dry-run knife-gen-new knife-overview knife-report
+
+KNIFE_CSV ?= config/data/KNIFES-NEW.csv
+KNIFE_OUT ?= docs/sk/knifes
+KNIFE_SRC ?= docs/sk/knifes
+KNIFE_OV_OUT ?= docs/sk
+
+knife-dry-run:
+	@node scripts/knifes_gen_new.mjs --csv $(KNIFE_CSV) --out $(KNIFE_OUT) --dry-run
+
+knife-gen-new:
+	@node scripts/knifes_gen_new.mjs --csv $(KNIFE_CSV) --out $(KNIFE_OUT)
+
+knife-overview:
+	@node scripts/knifes_overview.mjs --src $(KNIFE_SRC) --out $(KNIFE_OV_OUT)
+	@echo "Overview hotové: $(KNIFE_OV_OUT)/KNIFEsOverview-1.md, -2.md, -3.md"
+
+# optional: simple report (counts by category/type/priority)
+knife-report:
+	@node scripts/knifes_report.mjs --src $(KNIFE_SRC) --out docs/sk/reporting/knifes-report.md
+	@echo "Report: docs/sk/reporting/knifes-report.md"

@@ -1,0 +1,16 @@
+# 🎓 STHDF-SPECIFIC CONFIG
+dao: "7ds"
+content_dir: "content/docs/sk/7ds"
+template_fm: "core/templates/system/FM-Core.md"
+
+template_header: "core/templates/content/7ds/header/7ds_user_header.md"
+template_root: "core/templates/content/7ds/body"
+
+
+id_prefix: "7ds"
+locale: "sk"
+
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"
+  privacy: "public"

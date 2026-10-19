@@ -1,0 +1,11 @@
+# 🔪 KNIFE-SPECIFIC CONFIG
+dao: "knife"
+content_dir: "content/docs/sk/knifes"
+template_fm: "core/templates/system/FM-Core.md"
+template_header: "core/templates/content/knifes/header/knife-user-header.md"
+template_body: "core/templates/content/knifes/body/index.md"
+id_prefix: "K"
+locale: "sk"
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"

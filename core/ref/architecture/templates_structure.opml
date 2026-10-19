@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Templates Structure Overview</title>
+  </head>
+  <body>
+
+    <outline text="templates/">
+      <_note>Koreňová zložka obsahujúca všetky typy šablón pre KNIFE, triedy a projekty.</_note>
+
+      <outline text="content/">
+        <_note>Zdrojové šablóny určené pre používateľov – študentov, autorov. Obsahujú prázdne predlohy, ktoré sa vypĺňajú počas tvorby.</_note>
+
+        <outline text="knife/">
+          <_note>Predlohy pre KNIFE príspevky – základná aj používateľská verzia.</_note>
+          <outline text="index.template.md">
+            <_note>Základná šablóna KNIFE dokumentu – obsahuje FM a prázdne polia.</_note>
+          </outline>
+          <outline text="index.user.template.md">
+            <_note>Používateľská šablóna s vysvetlivkami, určená pre študentov alebo nových autorov.</_note>
+          </outline>
+        </outline>
+
+        <outline text="diploma-thesis/">
+          <_note>Predloha diplomovej práce rozdelená do kapitol (Úvod, Metodika, Výsledky, Diskusia).</_note>
+        </outline>
+
+        <outline text="7ds/">
+          <_note>Šablóna pre jednotlivé fázy metodiky 7Ds – od D1 (Management) po D7 (Lessons Learned).</_note>
+        </outline>
+
+        <outline text="sdlc/">
+          <_note>Predloha pre projektové dokumenty podľa SDLC (Analysis, Design, Implementation ...).</_note>
+        </outline>
+
+        <outline text="q12/">
+          <_note>Štruktúra pre hodnotiaci rámec Q12 – tímová reflexia a výstupy po projekte.</_note>
+        </outline>
+      </outline>
+
+      <outline text="system/">
+        <_note>Meta vrstva systému – definuje pravidlá, štruktúru a dátový model Front Matter (FM).</_note>
+        <outline text="FM-Core.md">
+          <_note>Dokumentácia všetkých FM polí – význam, použitie, typ, formát dát.</_note>
+        </outline>
+        <outline text="fm_schema.json">
+          <_note>Formálna špecifikácia FM polí v JSON formáte – používa sa na validáciu počas buildov.</_note>
+        </outline>
+        <outline text="fm.knife.yml">
+          <_note>Príklad FM pre typ "knife" – základ pre generátory a skripty.</_note>
+        </outline>
+      </outline>
+
+      <outline text="production/">
+        <_note>Finálne šablóny pripravené na publikovanie. Používajú sa po dokončení práce a validácii.</_note>
+        <outline text="knife/index.production.md">
+          <_note>Finálna štruktúra KNIFE dokumentu s vyplnenými FM a metadátami – určená na publikovanie.</_note>
+        </outline>
+        <outline text="diploma-thesis/index.production.md">
+          <_note>Finálna verzia diplomovej práce – pripravená na export do PDF alebo DOCX.</_note>
+        </outline>
+        <outline text="7ds/index.production.md">
+          <_note>Finálne reporty 7Ds fázy – obsahujú schválené výstupy a spätnú väzbu.</_note>
+        </outline>
+      </outline>
+    </outline>
+
+  </body>
+</opml>

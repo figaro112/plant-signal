@@ -1,0 +1,9 @@
+# 🌍 GLOBAL CONFIG (shared for whole repo)
+author: "Roman Kazička"
+default_locale: "sk"
+license: "CC-BY-NC-SA-4.0"
+rights_holder_system: "CAA / KNIFE / LetItGrow"
+default_status: "backlog"
+default_privacy: "public"
+default_origin_system: "mix"
+config_version: "2025-11-02"

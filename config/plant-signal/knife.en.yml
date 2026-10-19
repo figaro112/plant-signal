@@ -1,0 +1,9 @@
+dao: "knife"
+content_dir: "content/docs/en/knifes"
+template_fm: "config/plant-signal/FM-Project.md"
+template_body_root: "core/templates/content/knifes/body"
+locale: "en"
+defaults:
+  author: "Marek Hužvar; Matuš Plško; Richard Sič"
+  status: "backlog"
+  privacy: "private"

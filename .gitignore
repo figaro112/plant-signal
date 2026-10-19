@@ -1,3 +1,73 @@
+####################################
+# Univerzálny .gitignore pre GitDocs-Lab demo
+# Pokrýva: MkDocs, Hugo, Docusaurus, VitePress
+####################################
+
+
+# Python
+__pycache__/
+*.py[cod]
+# 📦 Node.js / NPM závislosti
+node_modules/
+node_modules/.cache/
+
+pnpm-lock.yaml
+yarn.lock
+
+# 🏗️ Výstupy z buildov
+/site/                     # MkDocs
+*.lock
+/public/                   # Hugo (len ak nepoužívam worktree pre gh-pages!)
+/build/                    # Docusaurus
+#assets mám v content pre multimedialny obsah, ktorý sa pri builde kopíruje do dosucasurus/static
+#/assets/
+publishing/docusaurus/build/
+# nasledujúci riadok nechcme ignorovat kvôli 
+publishing/docusaurus/docs/  
+publishing/docusaurus/static/assets
+# Ak používaš automatický deploy cez GitHub Actions, môžeš odkomentovať
+
+publishing/docusaurus/build/
+publishing/docusaurus/.docusaurus/
+publishing/docusaurus/.cache/
+
+.vitepress/dist/          # VitePress (ak bez podsložky)
+docs/.vitepress/dist/     # VitePress (v podsložke)
+dist/                     # iné systémy (napr. VuePress)
+out/                      # všeobecný výstup
+_site/                    # Jekyll (GitHub Pages)
+
+# 🧠 Cache, dočasné, systémové súbory
+.cache/
+docs/.vitepress/cache/
+.sass-cache/             # Jekyll
+.jekyll-cache/          # Jekyll
+.bundle/                # Jekyll bundler
+vendor/                 # Jekyll bundler
+.DS_Store
+Thumbs.db
+*.log
+*.zip
+*.tmp
+*.bak
+*.swp
+
+# 🚫 Ostatné súbory, ktoré nemajú ísť do Gitu
+.env
+.idea/
+.vscode/
+*.local
+
+# 💡 GitHub Pages pomocné výstupy (ak robia ručne deploy)
+gh-pages/
+build/
+/build/
+.docusaurus/
+/.docusaurus/
+.docusaurus/
+/.docusaurus/
+
+# PlantSignal project additions
 .DS_Store
 Thumbs.db
 *.tmp
@@ -7,3 +77,8 @@ Thumbs.db
 *.3mf
 .env
 .env.*
+
+# Generated project-only preview
+publishing/docusaurus/static/project-files/
+publishing/docusaurus/static-plant-signal/
+

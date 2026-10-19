@@ -1,0 +1,47 @@
+{
+  "id": [
+    "id",
+    "ID",
+    "\ufeffID"
+  ],
+  "short_title": [
+    "Short Title",
+    "ShortTitle",
+    "title"
+  ],
+  "category": [
+    "Category"
+  ],
+  "status": [
+    "Status"
+  ],
+  "type": [
+    "Type"
+  ],
+  "priority": [
+    "Priority"
+  ],
+  "authors": [
+    "Authors",
+    "Author"
+  ],
+  "description": [
+    "Description"
+  ],
+  "date": [
+    "Date of Record",
+    "Date",
+    "created"
+  ],
+  "slug": [
+    "Slug",
+    "LinkSlug",
+    "linkslug"
+  ],
+  "folder_name": [
+    "FolderName"
+  ],
+  "sidebar_label": [
+    "SidebarLabel"
+  ]
+}

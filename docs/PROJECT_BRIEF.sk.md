@@ -1,5 +1,7 @@
 # PlantSignal — návrh na tímové stretnutie
 
+[Projekt v štruktúre STHDF](../content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md) · [Sedem povinných sekcií](../content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/index.md)
+
 **Tím:** Marek Hužvar, Matuš Plško, Richard Sič  
 **Stretnutie:** 20. októbra 2026  
 **Stav:** nápad a digitálny 3D koncept; zatiaľ bez zapojenia, programu a fyzických skúšok.

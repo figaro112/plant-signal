@@ -1,0 +1,27 @@
+- color: 1d76db
+  description: Related to one of the 7 Dimensions
+  name: 7Ds
+- color: 84b6eb
+  description: New feature request
+  name: feature
+- color: d73a4a
+  description: Bug or issue
+  name: bug
+- color: 006b75
+  description: Docs-related changes
+  name: documentation
+- color: fbca04
+  description: Slovak content
+  name: SK
+- color: 0e8a16
+  description: English content
+  name: EN
+- color: 5319e7
+  description: MkDocs configuration or pages
+  name: MkDocs
+- color: bfdadc
+  description: GitHub Pages deployment
+  name: GitHubPages
+- color: fef2c0
+  description: Needs translation or update
+  name: translation-needed

@@ -1,0 +1,11 @@
+01,"Toto je hlavička , slúži na základnú informáciu a customizáciu pre definovanie vstupov pre KNIKFEs",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+id,display_id,guid,did,dao,title,category,type,status,priority,created_[yyyy-mm-dd],authors,authors,tags,description,context_origin_why_it_was_initiated,technology,sfia_level,sfia_domain,sfia_maturity,related_knife,potential_outputs,copyright,rights_holder_content,rights_holder_system,license,disclaimer,,owner,org,project,locale,foldername,sidebar_label,linkslug
+K000001, --, --,,knife,Toto je referenčý testovací knife,TEST,Developing,done,hi,01.03.2024,Roman Kazicka, --, --,Tento riadok je pre účely  overenie funkčnosti generovania nového KNIFE,Príbeh o vzniku, --,2,Business Analysis / Modelling,Diagrammatic, --, --, © 2025 Roman Kazička / SystemThinking, Autor,Roman Kazička,CC-BY-NC-SA-4.0,Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.,,GH Owner,GH-Organisation,Repository, --, --, --, --
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TESTKNIFE000000,67-demo-guid-0000,Test,Knife,Demo,deliverable,knife,normal,ST000,ST000,example,test,2025-10-05,testknife-demo,,,,,,,,,,,,,,,,,,,,,

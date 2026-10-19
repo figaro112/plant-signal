@@ -1,0 +1,33 @@
+audience:
+- educator
+- student
+- architect
+- project-manager
+entrypoint: README.md
+id: 01-CAA-Template
+languages:
+- sk
+- en
+license: MIT
+related:
+- KNIFE-Framework
+- CASo-Solutions
+structure:
+- 7Ds
+- docs/
+- assets/
+- mkdocs.yml
+- .github
+tags:
+- CAA
+- template
+- 7Ds
+- multilingual
+- SK
+- EN
+- MkDocs
+- GitHubPages
+- framework
+- project-starter
+title: Context Aware Approach – Project Template
+version: '1.0'

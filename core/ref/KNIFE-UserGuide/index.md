@@ -1,0 +1,25 @@
+---
+id: "KREF001_user-guide"
+guid: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+dao: "knife"
+title: "KNIFE – User Guide"
+description: "Oficiálny sprievodca a pravidlá projektu."
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: "knife"
+type: "guide"
+priority: "Top"
+tags: ["KNIFE","reference"]
+created: "2025-10-04"
+modified: ""
+status: "done"
+locale: "sk"
+#sidebar_label: "User Guide"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
+---

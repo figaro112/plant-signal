@@ -1,0 +1,13 @@
+.PHONY: knife-csv-sanitize knife-csv-verify knife-frontmatter-merge
+
+KNIFE_CSV ?= data/KNIFE-OVERVIEW-ONLY_cleaned.csv
+MERGE_ARGS ?= --dry-run
+
+knife-csv-sanitize:
+	node scripts/knife-csv-sanitize.mjs $(KNIFE_CSV:cleaned.csv=.csv) > $(KNIFE_CSV)
+
+knife-csv-verify:
+	node scripts/knife-csv-verify.mjs $(KNIFE_CSV)
+
+knife-frontmatter-merge:
+	node scripts/knife-frontmatter-merge.mjs --csv $(KNIFE_CSV) $(MERGE_ARGS)

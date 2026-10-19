@@ -1,0 +1,126 @@
+/*
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0077cc;
+  --ifm-color-primary-dark: #0066b2;
+  --ifm-color-primary-darker: #005a9e;
+  --ifm-color-primary-darkest: #004880;
+  --ifm-color-primary-light: #1a8cff;
+  --ifm-color-primary-lighter: #4da6ff;
+  --ifm-color-primary-lightest: #80c1ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(92, 64, 51, 0.1);
+  --link-underline-offset: 2px;
+  --link-underline-thickness: 2px;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* Primary brown palette */
+  --ifm-color-primary: #c26a2e;
+  --ifm-color-primary-dark: #a85726;
+  --ifm-color-primary-darker: #8f4a20;
+  --ifm-color-primary-darkest: #733a19;
+  --ifm-color-primary-light: #d7814a;
+  --ifm-color-primary-lighter: #e59a69;
+  --ifm-color-primary-lightest: #f2b585;
+
+  /* Backgrounds */
+  --ifm-background-color: #eb990c;           /* hlavné pozadie – veľmi tmavá hnedá */
+  --ifm-background-surface-color: #f1834ce9;   /* povrch (karty, obsah) – o kúsok svetlejšia */
+  --ifm-navbar-background-color: #c94a0bbd;    /* navbar v rovnakej tmavej hnedej */
+
+  /* Sidebar / menu */
+  --ifm-menu-color-background-active: #c8601b;
+  --ifm-menu-color-background-hover: #f85e0c;
+  --ifm-menu-color: #f0e0cf;
+
+  /* Text & headings */
+  --ifm-font-color-base: #f5f2eb;
+  --ifm-heading-color: #ffffff;
+  --ifm-color-emphasis-600: #e0d7cc;
+  --ifm-color-emphasis-700: #f3e8dd;
+
+  /* Odkazy */
+  --ifm-link-color: #ffcf6a;
+  --ifm-link-hover-color: #ffe39d;
+  --ifm-link-color-visited: #f5b25c;
+
+  /* Navbar – text a odkazy */
+  --ifm-navbar-link-color: #f0e0cf;
+  --ifm-navbar-link-hover-color: #ffe39d;
+  --ifm-navbar-link-active-color: #ffd166;
+  --ifm-navbar-title-color: #ffffff;
+
+  /* Aktívne položky v menu / breadcrumbs / pagination */
+  --ifm-menu-color-active: #ffffff;
+  --ifm-breadcrumb-color-active: #ffd166;
+  --ifm-pagination-nav-color: #ffd166;
+
+  /* Zvýraznenie riadkov kódu */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 209, 102, 0.12);
+}
+
+[data-theme='dark'] .navbar__link { color: var(--ifm-navbar-link-color) !important; }
+[data-theme='dark'] .navbar__link:hover,
+[data-theme='dark'] .navbar__link--active { color: var(--ifm-navbar-link-active-color) !important; }
+[data-theme='dark'] .navbar__title { color: var(--ifm-navbar-title-color) !important; }
+
+/* Improve link contrast and readability in dark theme */
+[data-theme='dark'] a {
+  color: var(--ifm-link-color) !important;
+  text-decoration: underline;
+  text-underline-offset: var(--link-underline-offset);
+  text-decoration-thickness: var(--link-underline-thickness);
+}
+[data-theme='dark'] a:hover {
+  color: var(--ifm-link-hover-color) !important;
+  text-decoration-thickness: calc(var(--link-underline-thickness) + 1px);
+}
+[data-theme='dark'] a:visited {
+  color: var(--ifm-link-color-visited) !important;
+}
+
+/* Sidebar/menu links */
+[data-theme='dark'] .menu__link {
+  color: var(--ifm-menu-color) !important;
+}
+[data-theme='dark'] .menu__link:hover,
+[data-theme='dark'] .menu__link--active {
+  background: var(--ifm-menu-color-background-hover) !important;
+  color: var(--ifm-link-hover-color) !important;
+}
+
+/* Breadcrumbs */
+[data-theme='dark'] .breadcrumbs__link {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+[data-theme='dark'] .breadcrumbs__link:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: underline;
+}
+[data-theme='dark'] .breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-breadcrumb-color-active);
+  font-weight: 600;
+}
+
+/* Pagination (Prev/Next) */
+[data-theme='dark'] .pagination-nav__link {
+  color: var(--ifm-pagination-nav-color);
+  border-color: rgba(255, 209, 102, 0.35);
+}
+[data-theme='dark'] .pagination-nav__link:hover {
+  border-color: rgba(255, 227, 157, 0.65);
+  box-shadow: 0 0 0 1px rgba(255, 227, 157, 0.25);
+}
+
+/* Force override dark background (Infima override) */
+html[data-theme='dark'] {
+  --ifm-background-color: #ffa20044 !important;
+}

@@ -1,0 +1,21 @@
+# 🎓 STHDF-SPECIFIC CONFIG
+dao: "thesis"
+
+content_dir: "content/docs/sk/thesis"
+template_fm: "core/templates/system/FM-Core.md"
+
+template_header: "core/templates/content/thesis/header/diploma-thesis-header.md"
+template_root: "core/templates/content/thesis/body"
+
+
+  
+id_prefix: "thesis"
+locale: "sk"
+
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"
+  privacy: "public"
+
+
+

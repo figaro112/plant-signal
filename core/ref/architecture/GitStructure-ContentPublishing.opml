@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Git Structure for isolated content & publishing (Sites/Docusaurus)</title>
+  </head>
+  <body>
+
+    <outline text="root/" note="Koreň repozitára – zdrojový obsah, systémové šablóny, konfigurácia a staging publikácie.">
+      <_note>Koreň repozitára – zdrojový obsah, systémové šablóny, konfigurácia a staging publikácie.</_note>
+
+      <!-- CONTENT -->
+      <outline text="content/" note="SSOT – jediný zdroj pravdy. Tu žijú .md s FrontMatter. Buildy sa týchto súborov nedotýkajú.">
+        <_note>SSOT – jediný zdroj pravdy. Tu žijú .md s FrontMatter. Buildy sa týchto súborov nedotýkajú.</_note>
+
+        <outline text="docs/">
+          <_note>Obsah určený na publikovanie (študenti, KNIFE, projekty). Jazykové vetvy: sk / en.</_note>
+
+          <outline text="sk/" note="Slovenský obsah.">
+            <_note>Slovenský obsah.</_note>
+            <outline text="knifes/" note="KNIFE príspevky komunity.">
+              <_note>KNIFE príspevky komunity.</_note>
+            </outline>
+            <outline text="diploma-thesis/" note="Štruktúry diplomových prác (kapitoly).">
+              <_note>Štruktúry diplomových prác (kapitoly).</_note>
+            </outline>
+            <outline text="7ds/" note="Metodika 7Ds (D1…D7).">
+              <_note>Metodika 7Ds (D1…D7).</_note>
+            </outline>
+            <outline text="sdlc/" note="Životný cyklus vývoja softvéru.">
+              <_note>Životný cyklus vývoja softvéru.</_note>
+            </outline>
+            <outline text="q12/" note="Rámec tímovej reflexie a wellbeing (Q12).">
+              <_note>Rámec tímovej reflexie a wellbeing (Q12).</_note>
+            </outline>
+          </outline>
+
+          <outline text="en/" note="Anglický obsah (podobná štruktúra ako sk/).">
+            <_note>Anglický obsah (podobná štruktúra ako sk/).</_note>
+            <outline text="knifes/"/><outline text="diploma-thesis/"/><outline text="7ds/"/><outline text="sdlc/"/><outline text="q12/"/>
+          </outline>
+        </outline>
+      </outline>
+
+      <!-- CORE -->
+      <outline text="core/" note="„Engine“ repozitára: systémové šablóny, skripty a interné referencie. Bez jazykových mutácií.">
+        <_note>„Engine“ repozitára: systémové šablóny, skripty a interné referencie. Bez jazykových mutácií.</_note>
+
+        <outline text="templates/" note="Systémové šablóny, z ktorých generujeme obsah do content/.">
+          <_note>Systémové šablóny, z ktorých generujeme obsah do content/.</_note>
+
+          <outline text="content/" note="Štartéry pre tvorbu obsahu (jazykové varianty vnútri).">
+            <_note>Štartéry pre tvorbu obsahu (jazykové varianty vnútri).</_note>
+
+            <outline text="knife/">
+              <_note>Šablóny KNIFE – používateľ ich rozbalí do content/docs/..</_note>
+              <outline text="sk/index.template.md" note="SK šablóna KNIFE (plný FM, prázdne hodnoty).">
+                <_note>SK šablóna KNIFE (plný FM, prázdne hodnoty).</_note>
+              </outline>
+              <outline text="en/index.template.md" note="EN šablóna KNIFE (plný FM, prázdne hodnoty).">
+                <_note>EN šablóna KNIFE (plný FM, prázdne hodnoty).</_note>
+              </outline>
+            </outline>
+
+            <outline text="diploma-thesis/">
+              <_note>Štruktúra diplomovej práce – kapitoly ako samostatné šablóny.</_note>
+              <outline text="sk/01-uvod/index.template.md" note="Kapitola 01 – Úvod (SK)."><_note>Kapitola 01 – Úvod (SK).</_note></outline>
+              <outline text="sk/02-teoria/index.template.md" note="Kapitola 02 – Teória (SK)."><_note>Kapitola 02 – Teória (SK).</_note></outline>
+              <outline text="sk/03-navrh/index.template.md" note="Kapitola 03 – Návrh (SK)."><_note>Kapitola 03 – Návrh (SK).</_note></outline>
+              <outline text="sk/04-realizacia/index.template.md" note="Kapitola 04 – Realizácia (SK)."><_note>Kapitola 04 – Realizácia (SK).</_note></outline>
+              <outline text="sk/05-zaver/index.template.md" note="Kapitola 05 – Záver (SK)."><_note>Kapitola 05 – Záver (SK).</_note></outline>
+
+              <outline text="en/01-intro/index.template.md" note="Chapter 01 – Intro (EN)."><_note>Chapter 01 – Intro (EN).</_note></outline>
+              <outline text="en/02-theory/index.template.md" note="Chapter 02 – Theory (EN)."><_note>Chapter 02 – Theory (EN).</_note></outline>
+              <outline text="en/03-design/index.template.md" note="Chapter 03 – Design (EN)."><_note>Chapter 03 – Design (EN).</_note></outline>
+              <outline text="en/04-implementation/index.template.md" note="Chapter 04 – Implementation (EN)."><_note>Chapter 04 – Implementation (EN).</_note></outline>
+              <outline text="en/05-conclusion/index.template.md" note="Chapter 05 – Conclusion (EN)."><_note>Chapter 05 – Conclusion (EN).</_note></outline>
+            </outline>
+
+            <outline text="7ds/sk/index.template.md" note="7Ds – štartovacia šablóna (SK).">
+              <_note>7Ds – štartovacia šablóna (SK).</_note>
+            </outline>
+            <outline text="sdlc/sk/index.template.md" note="SDLC – štartér (SK).">
+              <_note>SDLC – štartér (SK).</_note>
+            </outline>
+            <outline text="q12/sk/index.template.md" note="Q12 – štartér (SK).">
+              <_note>Q12 – štartér (SK).</_note>
+            </outline>
+          </outline>
+
+          <outline text="production/" note="„Release-ready“ predlohy – finálne rozloženie a sekcie pre publikovanie.">
+            <_note>„Release-ready“ predlohy – finálne rozloženie a sekcie pre publikovanie.</_note>
+            <outline text="knife/index.production.md" note="KNIFE – finálny layout (publikovateľná podoba).">
+              <_note>KNIFE – finálny layout (publikovateľná podoba).</_note>
+            </outline>
+          </outline>
+        </outline>
+
+        <outline text="scripts/" note="Systémové skripty: generovanie z templates, staging publikácie, FM utilitky.">
+          <_note>Systémové skripty: generovanie z templates, staging publikácie, FM utilitky.</_note>
+          <outline text="tools/new-from-template.mjs" note="Generator: rozbalí šablónu do content/ + doplní FM (add-only).">
+            <_note>Generator: rozbalí šablónu do content/ + doplní FM (add-only).</_note>
+          </outline>
+          <outline text="publish/stage-sites.mjs" note="Staging pre GitHub Pages: content → publication/sites.">
+            <_note>Staging pre GitHub Pages: content → publication/sites.</_note>
+          </outline>
+          <outline text="fm/fm_apply.mjs" note="(voliteľné) Add-only dopĺňanie FrontMatter podľa schémy.">
+            <_note>(voliteľné) Add-only dopĺňanie FrontMatter podľa schémy.</_note>
+          </outline>
+          <outline text="fm/verify_fm.mjs" note="(voliteľné) Validácia FM proti fm_schema.json.">
+            <_note>(voliteľné) Validácia FM proti fm_schema.json.</_note>
+          </outline>
+        </outline>
+
+        <outline text="refs/" note="Interné poznámky k jadru (technické zápisky, architektúra).">
+          <_note>Interné poznámky k jadru (technické zápisky, architektúra).</_note>
+        </outline>
+      </outline>
+
+      <!-- CONFIG -->
+      <outline text="config/" note="Konfigurácia: schémy, vstupy pre generátory, logy/reporty výstupov.">
+        <_note>Konfigurácia: schémy, vstupy pre generátory, logy/reporty výstupov.</_note>
+        <outline text="fm_schema.json" note="Hlavná schéma FrontMatter (FM-Core 1.0.1).">
+          <_note>Hlavná schéma FrontMatter (FM-Core 1.0.1).</_note>
+        </outline>
+        <outline text="nav_config.json" note="(voliteľné) Pravidlá pre generovanie navigácie/breadcrumbs.">
+          <_note>(voliteľné) Pravidlá pre generovanie navigácie/breadcrumbs.</_note>
+        </outline>
+        <outline text="input/" note="Vstupné dáta (CSV, importy).">
+          <_note>Vstupné dáta (CSV, importy).</_note>
+        </outline>
+        <outline text="output/" note="Reporty a exporty (CSV indexy, validácie).">
+          <_note>Reporty a exporty (CSV indexy, validácie).</_note>
+        </outline>
+      </outline>
+
+      <!-- PUBLICATION -->
+      <outline text="publication/" note="Staging build artefaktov pre jednotlivé generátory. Originál v content/ sa nikdy neprepíše.">
+        <_note>Staging build artefaktov pre jednotlivé generátory. Originál v content/ sa nikdy neprepíše.</_note>
+        <outline text="sites/" note="Výstup pre GitHub Pages (statické HTML/CSS/JS).">
+          <_note>Výstup pre GitHub Pages (statické HTML/CSS/JS).</_note>
+        </outline>
+        <outline text="docusaurus/docs/" note="Vstup pre Docusaurus (kopie content/docs pre build).">
+          <_note>Vstup pre Docusaurus (kopie content/docs pre build).</_note>
+        </outline>
+      </outline>
+
+    </outline>
+  </body>
+</opml>
