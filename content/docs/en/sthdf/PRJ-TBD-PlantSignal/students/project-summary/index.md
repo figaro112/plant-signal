@@ -79,7 +79,7 @@ modified: "2026-10-19 14:19"
 status: "inprogress"
 
 # Viditeľnosť – default "public"
-privacy: "private"
+privacy: "public"
 
 
 # ⚖ INTELLECTUAL PROPERTY -------------------------------------------
@@ -139,7 +139,7 @@ fm_reserved2: ""
 
 - **Working identifier:** `PRJ-TBD-PlantSignal`; the teacher has not assigned a project number yet.
 - **Course:** Systemic Thinking in IT & Digital Fabrication, 2026–2027.
-- **Repository:** https://github.com/figaro112/plant-signal (private).
+- **Repository:** https://github.com/figaro112/plant-signal (public at the last GitHub verification).
 - **Stage:** concept; not yet approved or physically validated.
 
 PlantSignal is a desk plant pot concept that uses a capacitive soil probe and red/green LEDs to remind the user to check watering. The physical design combines a purchased liner and saucer with a printed sleeve, removable probe clip and separate controller enclosure.

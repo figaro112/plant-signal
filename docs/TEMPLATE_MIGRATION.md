@@ -1,6 +1,6 @@
 # Migration to the STHDF class template
 
-**Date:** 19 October 2026. **Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), private, `main`. **Project:** `PRJ-TBD-PlantSignal`, provisional; project and ST roster numbers are not assigned.
+**Date:** 19 October 2026. **Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), branch `main`. GitHub reports public visibility at post-push verification; the migration did not change it. **Project:** `PRJ-TBD-PlantSignal`, provisional; project and ST roster numbers are not assigned.
 
 ## Source
 
@@ -37,7 +37,7 @@ KNIFE generation used `--type knife`, local IDs `K-LOCAL-001` and `K-LOCAL-002`,
 
 Upstream workflow YAML files were imported with `.disabled` extensions. Their example deployments and releases are inactive. A separate project documentation workflow only checks links, metadata and original assets with read-only repository permissions.
 
-The repository remains private. The optional Docusaurus configuration renders project documents and selected supporting references; it does not deploy or enable GitHub Pages. Unrelated historical examples and `static=broken` remain upstream reference material and are excluded from that preview. Their legacy links and configuration have not been audited or repaired.
+GitHub reported public repository visibility at post-push verification; this migration did not modify that setting. The optional Docusaurus configuration renders project documents and selected supporting references; it does not deploy or enable GitHub Pages. Unrelated historical examples and `static=broken` remain upstream reference material and are excluded from that preview. Their legacy links and configuration have not been audited or repaired.
 
 ## Identifiers and class integration
 
@@ -47,6 +47,6 @@ The teacher handles the class-dashboard import. The team's task is to provide th
 
 ## Verification scope
 
-`python tools/check-plant-signal.py` checks seven deliverable paths, private localized front matter, unique GUIDs and project navigation. The migration was additionally checked with `--check-original-assets`, comparing original CAD/image bytes against commit `1315d1f` (text files are compared with normalized line endings). The optional asset check is not required in ongoing CI, so legitimate future CAD revisions remain possible. The checker does not apply the legacy global schema to imported historical examples.
+`python tools/check-plant-signal.py` checks seven deliverable paths, localized front matter matching the configured repository visibility, unique GUIDs and project navigation. The migration was additionally checked with `--check-original-assets`, comparing original CAD/image bytes against commit `1315d1f` (text files are compared with normalized line endings). The optional asset check is not required in ongoing CI, so legitimate future CAD revisions remain possible. The checker does not apply the legacy global schema to imported historical examples.
 
 The optional documentation build starts with `python tools/prepare-plant-signal-site.py`. Existing [mesh validation](../models/mesh-validation.json) remains available; digital geometry does not prove physical fit, printability, water resistance or sensor performance.

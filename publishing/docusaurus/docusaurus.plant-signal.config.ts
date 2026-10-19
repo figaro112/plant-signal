@@ -19,7 +19,7 @@ const config: Config = {
   themeConfig: {
     navbar: {title: 'PlantSignal', items: [
       {to: '/', label: 'Project', position: 'left'},
-      {href: 'https://github.com/figaro112/plant-signal', label: 'GitHub (private)', position: 'right'},
+      {href: 'https://github.com/figaro112/plant-signal', label: 'GitHub', position: 'right'},
     ]},
     footer: {style: 'dark', copyright: 'PlantSignal · Marek Hužvar · Matuš Plško · Richard Sič · STHDF 2026–2027'},
     prism: {theme: themes.github, darkTheme: themes.dracula},

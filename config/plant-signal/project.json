@@ -9,11 +9,13 @@
   },
   "repository": "https://github.com/figaro112/plant-signal",
   "primary_locale": "en",
-  "privacy": "private",
+  "privacy": "public",
   "stage": "concept",
   "template_repository": "https://github.com/06-STH-Projects/2026_sthdf_class_template",
   "template_commit": "d30dd1dfe166e97d95ad7ffca26d84ca73fa2b64",
   "template_imported": "2026-10-19",
   "history_policy": "Keep PlantSignal commits; do not import upstream Git history.",
-  "disabled_upstream_workflows": true
+  "disabled_upstream_workflows": true,
+  "visibility_observed": "2026-10-19",
+  "visibility_note": "GitHub reported public at post-push verification; this migration did not change repository visibility."
 }

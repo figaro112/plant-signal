@@ -78,7 +78,7 @@ modified: ""
 status: "backlog"
 
 # Viditeľnosť – default "public"
-privacy: "private"
+privacy: "public"
 
 
 # ⚖ INTELLECTUAL PROPERTY -------------------------------------------

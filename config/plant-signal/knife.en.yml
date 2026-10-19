@@ -6,4 +6,4 @@ locale: "en"
 defaults:
   author: "Marek Hužvar; Matuš Plško; Richard Sič"
   status: "backlog"
-  privacy: "private"
+  privacy: "public"

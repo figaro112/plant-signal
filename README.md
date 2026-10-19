@@ -7,7 +7,7 @@
 **Team:** Marek Hužvar · Matuš Plško · Richard Sič  
 **Working project ID:** `PRJ-TBD-PlantSignal` — no official project number assigned yet.  
 **Status:** concept and digital CAD; electronics, printing, calibration and physical tests have not started.  
-**Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), private.
+**Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), public at the last GitHub verification.
 
 This repository follows the [official STHDF class template](https://github.com/06-STH-Projects/2026_sthdf_class_template) referenced by [K000119 — class repository setup](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/). PlantSignal's existing history and CAD are preserved; upstream Git history is not imported.
 
@@ -84,7 +84,7 @@ The optional configuration renders only this project's documentation and does no
 4. Implement and test; add real evidence and personal reflections as work progresses.
 5. Share the repository link as instructed. The teacher handles class-dashboard integration; this repository does not push to the template or class repository.
 
-No firmware is included. The repository remains private; no website is published. Teammates need access to clone it:
+No firmware is included. GitHub currently reports the repository as public; this migration did not change its visibility. No separate website is published. The source can be cloned with:
 
 ```sh
 git clone https://github.com/figaro112/plant-signal.git

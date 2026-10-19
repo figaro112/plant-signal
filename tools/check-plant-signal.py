@@ -23,7 +23,7 @@ for p in files:
                 if m[1] in seen:errors.append('Duplicate '+key+': '+m[1])
                 seen.add(m[1])
                 if key=='guid':uuid.UUID(m[1])
-        if 'privacy: "private"' not in header:errors.append('Not private: '+rel)
+        if f'privacy: "{META["privacy"]}"' not in header:errors.append('Wrong visibility metadata: '+rel)
         expected='sk' if '/sk/' in rel else 'en'
         if f'locale: "{expected}"' not in header:errors.append('Wrong locale: '+rel)
         if re.search(r'\{\{[A-Z_]+\}\}',text):errors.append('Unresolved placeholder: '+rel)

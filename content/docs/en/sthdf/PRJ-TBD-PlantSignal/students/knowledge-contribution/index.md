@@ -79,7 +79,7 @@ modified: "2026-10-19 14:19"
 status: "inprogress"
 
 # Viditeľnosť – default "public"
-privacy: "private"
+privacy: "public"
 
 
 # ⚖ INTELLECTUAL PROPERTY -------------------------------------------

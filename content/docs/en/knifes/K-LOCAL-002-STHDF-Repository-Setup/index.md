@@ -80,7 +80,7 @@ modified: "2026-10-19 14:19"
 status: "inprogress"
 
 # Viditeľnosť – default "public"
-privacy: "private"
+privacy: "public"
 
 
 # ⚖ INTELLECTUAL PROPERTY -------------------------------------------
@@ -168,7 +168,7 @@ The seven sections are About Me, Knowledge Contribution, Project Summary, Projec
 
 ## Tips and notes
 
-Imported workflows are reference files with a disabled extension. No deployment or release automation is enabled by this migration. The repository stays private. Upstream content retains attribution and licenses; project-specific configuration is separated from upstream defaults.
+Imported workflows are reference files with a disabled extension. No deployment or release automation is enabled by this migration. GitHub reports the repository as public at post-push verification; this migration did not change its visibility. Upstream content retains attribution and licenses; project-specific configuration is separated from upstream defaults.
 
 ## Value
 
