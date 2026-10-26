@@ -1,5 +1,13 @@
 # Scope change record
 
+## 26 October 2026 — industrial design 03 and app design 01
+
+The team requested a more realistic product model and initial app screens. Replaced the separated bottle/box presentation with a rounded integrated enclosure, internal reservoir bay, fill lid, passive viewing window and hidden service compartment. Added actual editable CAD and five STL components, a GLB viewer and a photorealistic AI-generated studio visualization with recorded provenance.
+
+Added five authored app design screens, a clickable HTML prototype and browser screenshots. Navigation, profile edits and sample advice/watering feedback work locally; no hardware, backend, real advice API or push notifications are connected. The functional scope below is unchanged.
+
+[Design artifacts and verification](DESIGN_PREVIEW.en.md).
+
 ## 26 October 2026 — concept 02
 
 The team changed PlantSignal from a local dry-soil reminder into a mobile-connected plant-care and automatic-watering concept.

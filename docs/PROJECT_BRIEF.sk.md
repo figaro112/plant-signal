@@ -23,7 +23,7 @@ Zalievanie nebude závisieť od otvorenej aplikácie. Prázdna nádržka, neplat
 
 ## Čo sa mení na fyzickom prototype
 
-Zostáva obal na kúpený kvetináč s podmiskou a držiak sondy. Skrinka elektroniky má plné veko. Pribudol koncept tlačeného stojana na kúpenú vodotesnú nádržku; čerpadlo, hadičky a konkrétny spôsob merania vody ešte vyberieme. Obrázok je návrh, nie potvrdené zapojenie alebo otestovaná hydraulika.
+Aktívny dizajn 03 má jedno oblé telo s priestorom na rastlinu, vnútorným zásobníkom a skrytou servisnou časťou. Má vlastné GLB/STL súbory aj otočný náhľad. Čerpadlo, vnútorná nádržka, hadičky a okienko hladiny sú zatiaľ návrhové obálky; vyberieme skutočné diely a overíme ich fit. Produktový obrázok je AI vizualizácia, nie fotka vyrobeného kusu.
 
 ## Postup
 
@@ -33,6 +33,6 @@ Zostáva obal na kúpený kvetináč s podmiskou a držiak sondy. Skrinka elektr
 4. Doplníme backend, históriu, notifikácie a volanie API s fotkami a otázkami.
 5. Upravíme 3D diely, zložíme prototyp, otestujeme aj výpadky a zdokumentujeme výsledky.
 
-Mobilný framework, prvá platforma, poskytovateľ API, hosting, termíny, rozpočet a finálne roly ešte nie sú dohodnuté. Osobné profily a ST čísla doplnia členovia. Aplikácia ani automatické zalievanie zatiaľ nie sú implementované.
+Máme aj [päť prvých screenov a klikateľný návrh aplikácie](DESIGN_PREVIEW.en.md). Údaje sú ukážkové; mobilný backend, API ani reálne zalievanie nie sú pripojené. Mobilný framework, prvá platforma, poskytovateľ API, hosting, termíny, rozpočet a finálne roly ešte nie sú dohodnuté. Osobné profily a ST čísla doplnia členovia. Aplikácia ani automatické zalievanie zatiaľ nie sú implementované.
 
 [Projektový dashboard](../content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md) · [Architektúra](ARCHITECTURE.en.md) · [3D modely](../models/README.md)

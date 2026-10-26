@@ -136,7 +136,7 @@ fm_reserved2: ""
 
 # PlantSignal — STHDF project dashboard
 
-**Concept 02, updated 26 October 2026.** Project number and ST roster IDs remain unassigned; `PRJ-TBD-PlantSignal` is temporary. Team: Marek Hužvar · Matuš Plško · Richard Sič.
+**Integrated design 03 / app design 01, 26 October 2026.** Project number and ST roster IDs remain unassigned; `PRJ-TBD-PlantSignal` is temporary. Team: Marek Hužvar · Matuš Plško · Richard Sič.
 
 ![Concept 02](../../../../../assets/hero.png)
 
@@ -162,4 +162,8 @@ The active direction is a mobile app linked to sensors and automatic watering fr
 - [CAD and print assumptions](../../../../../models/README.md)
 - [Slovak summary](../../../../../docs/PROJECT_BRIEF.sk.md)
 
-**Not implemented:** mobile app, firmware, backend, sensor/pump integration, notifications, photo API, physical printing and watering tests. Controller, framework and providers are proposals/open decisions. Class-dashboard integration remains the teacher's process.
+**Available:** editable CAD, an interactive GLB viewer and five clickable HTML app-screen designs. **Not implemented:** integrated/native mobile app, firmware, backend, sensor/pump integration, notifications, photo API, physical printing and watering tests. Controller, framework and providers are proposals/open decisions. Class-dashboard integration remains the teacher's process.
+
+## New design artifacts
+
+[Product visualization, actual CAD and app screens](../../../../../docs/DESIGN_PREVIEW.en.md)

@@ -1,6 +1,6 @@
-# PlantSignal — concept 02
+# PlantSignal — functional concept with integrated design 03
 
-**Scope updated: 26 October 2026.** This is a requirements and digital design revision. No mobile app, firmware, backend, working irrigation or plant-health API integration has been implemented.
+**Scope updated: 26 October 2026.** This is a requirements and digital design revision. An interactive HTML UI design prototype exists. No integrated mobile app, firmware, backend, working irrigation or plant-health API connection has been implemented.
 
 ![Concept 02](../assets/hero.png)
 
@@ -15,14 +15,21 @@ The earlier red/green indicator has been removed. The product has no external st
 | Element | Intended purpose | Design state |
 |---|---|---|
 | Purchased liner and saucer | Hold plant/substrate and collect drainage | Actual sizes and material to choose |
-| Printed sleeve and probe clip | Hold the liner and repeatable sensor position | Concept geometry available; fit untested |
+| Integrated shell, base and probe holder | Package the plant, reservoir and dry service area; hold the probe | Concept geometry available; fit untested |
 | Soil moisture probe | Provide calibrated substrate readings | Exact probe and calibration pending |
 | Reservoir and low-water sensing | Store water and detect when refill is needed | Capacity and sensing method pending |
 | Small dosing pump and tubing | Deliver measured watering bursts | Pump, driver, power and flow rate pending |
 | Networked controller | Read sensors, apply local watering policy and sync data | Wi-Fi-equipped ESP32 DevKit is a proposal, not a purchased part |
 | Dry controller enclosure | House controller and driver away from spills | Solid lid; actual mounting/connector layout pending |
 
-A purchased watertight reservoir is the proposed first implementation. The new printed reservoir cradle is a dry support, not a water container. The rendered reservoir, pump and tubing are illustrative envelopes, not verified hardware choices. Reservoir capacity cannot be inferred from the image.
+A purchased watertight reservoir is the proposed first implementation. The current model has an internal reservoir bay, rounded fill lid and a passive viewing-window concept; the separate bottle cradle is superseded. The CAD reservoir, pump, window and tubing are illustrative envelopes, not verified hardware choices. Reservoir capacity cannot be inferred from the image.
+
+## Design previews
+
+- [Industrial design, actual CAD and five app screens](DESIGN_PREVIEW.en.md).
+- [Actual GLB and STL model](../models/v3/README.md).
+
+The studio visualization is AI-generated; the actual CAD is supplied separately. UI screen captures show a local design prototype with sample data, not a live device or advice service.
 
 ## App and service features
 

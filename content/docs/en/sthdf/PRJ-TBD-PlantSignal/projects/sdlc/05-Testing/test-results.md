@@ -133,16 +133,10 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Current test evidence
+# Current verification evidence
 
-Current evidence covers digital geometry and documentation navigation/build only. Hardware readings, flow, low-water inhibition, notification delivery, mobile integration and plant-health responses have no observed results yet.
+Five mobile layouts rendered at 390 × 844 without initial content clipping. Browser interactions verified navigation, plant/species editing, the watering switch and explicit simulation feedback. The 320 px presentation did not overflow horizontally. Actual GLB loading and exploded viewing worked without browser page exceptions. STL exports reloaded as closed positive-volume single solids. No physical, hydraulic, sensor, backend or advice-provider results exist.
 
-## Current design references
-
-- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
-- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
-- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
-- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
-- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
+[Design guide and screenshots](../../../../../../../../docs/DESIGN_PREVIEW.en.md) · [Current CAD](../../../../../../../../models/v3/README.md)
 
 [Project dashboard](../../../index.md)

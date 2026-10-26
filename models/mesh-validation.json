@@ -1,92 +1,92 @@
 {
-  "sleeve": {
+  "main-shell": {
     "watertight": true,
-    "connected_components": 1,
+    "connected_solids": 1,
+    "triangles": 9362,
     "bounds_mm": [
       [
-        -72.0,
-        -72.0,
+        -115.0,
+        -80.0,
         0.0
       ],
       [
-        72.0,
-        72.0,
-        130.0
+        115.0,
+        80.0,
+        145.0
       ]
     ],
-    "volume_mm3": 217135.1,
-    "triangles": 1296
+    "volume_mm3": 728059.27
   },
-  "electronics-base": {
+  "base-plinth": {
     "watertight": true,
-    "connected_components": 1,
+    "connected_solids": 1,
+    "triangles": 3344,
     "bounds_mm": [
       [
-        -50.0,
-        -34.0,
+        -111.0,
+        -76.0,
         0.0
       ],
       [
-        50.0,
-        34.0,
-        35.0
+        111.0,
+        76.0,
+        12.0
       ]
     ],
-    "volume_mm3": 55857.9,
-    "triangles": 1168
+    "volume_mm3": 340557.45
   },
-  "electronics-lid": {
+  "refill-lid": {
     "watertight": true,
-    "connected_components": 1,
+    "connected_solids": 1,
+    "triangles": 1292,
     "bounds_mm": [
       [
-        -50.0,
-        -34.0,
+        52.0,
+        -53.0,
         0.0
       ],
       [
-        50.0,
-        34.0,
-        3.0
+        100.0,
+        53.0,
+        6.0
       ]
     ],
-    "volume_mm3": 20291.7,
-    "triangles": 540
+    "volume_mm3": 26834.02
   },
-  "sensor-clip": {
+  "rear-service-cover": {
     "watertight": true,
-    "connected_components": 1,
+    "connected_solids": 1,
+    "triangles": 512,
     "bounds_mm": [
       [
-        -15.5,
-        -78.0,
+        -29.0,
+        79.0,
         0.0
       ],
       [
-        15.5,
-        -48.0,
-        21.0
+        29.0,
+        82.0,
+        30.0
       ]
     ],
-    "volume_mm3": 5188.0,
-    "triangles": 98
+    "volume_mm3": 5092.11
   },
-  "reservoir-cradle": {
+  "sensor-holder": {
     "watertight": true,
-    "connected_components": 1,
+    "connected_solids": 1,
+    "triangles": 62,
     "bounds_mm": [
       [
-        -46.0,
-        -46.0,
+        -78.392,
+        46.804,
         0.0
       ],
       [
-        46.0,
-        46.0,
-        20.0
+        -51.608,
+        69.196,
+        22.0
       ]
     ],
-    "volume_mm3": 38714.5,
-    "triangles": 768
+    "volume_mm3": 3182.0
   }
 }

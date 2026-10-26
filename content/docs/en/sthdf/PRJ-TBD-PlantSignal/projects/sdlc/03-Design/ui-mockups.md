@@ -133,16 +133,10 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# App screens — design input
+# Initial app designs — available
 
-Suggested screens are Plants, Plant detail, Add/edit plant, History, Ask about this plant, Advice detail and Settings. They are documented requirements, not implemented or rendered mobile UI. The mobile framework and first platform are undecided.
+The initial screens are My plants, Plant detail, Care assistant, Watering and Plant profile. The HTML prototype supports local navigation, profile/type editing, image preview and clearly labelled example advice/refill/watering feedback. Readings, trend points, timing, volume and answers are sample data. The mobile framework and live services remain undecided.
 
-## Current design references
-
-- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
-- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
-- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
-- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
-- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
+[Design guide and screenshots](../../../../../../../../docs/DESIGN_PREVIEW.en.md) · [Current CAD](../../../../../../../../models/v3/README.md)
 
 [Project dashboard](../../../index.md)

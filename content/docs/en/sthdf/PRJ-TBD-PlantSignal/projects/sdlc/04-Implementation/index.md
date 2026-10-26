@@ -133,16 +133,10 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Implementation — not started
+# Implementation boundary
 
-No mobile app, backend, firmware or external API integration has been implemented. Proposed order: verify parts; sensing/plant profiles; bounded local dosing; records/notifications; photo-advice integration; complete physical demo.
+The local HTML design prototype and interactive GLB viewer are implemented. They do not provide an installed/native mobile app, backend, device firmware, pump control, accounts, notification delivery or external advice calls. Continue with measured hardware selection, sensing and bounded local control before live integration.
 
-## Current design references
-
-- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
-- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
-- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
-- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
-- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
+[Design guide and screenshots](../../../../../../../../docs/DESIGN_PREVIEW.en.md) · [Current CAD](../../../../../../../../models/v3/README.md)
 
 [Project dashboard](../../../index.md)

@@ -1,0 +1,4 @@
+numpy>=2.0
+trimesh>=5.0
+manifold3d>=3.0
+networkx>=3.0

@@ -10,7 +10,7 @@
   "repository": "https://github.com/figaro112/plant-signal",
   "primary_locale": "en",
   "privacy": "public",
-  "stage": "concept",
+  "stage": "design-prototype",
   "template_repository": "https://github.com/06-STH-Projects/2026_sthdf_class_template",
   "template_commit": "d30dd1dfe166e97d95ad7ffca26d84ca73fa2b64",
   "template_imported": "2026-10-19",
@@ -18,7 +18,7 @@
   "disabled_upstream_workflows": true,
   "visibility_observed": "2026-10-19",
   "visibility_note": "GitHub reported public at post-push verification; this migration did not change repository visibility.",
-  "concept_version": "02",
+  "concept_version": "03",
   "scope_updated": "2026-10-26",
   "product": "Mobile-connected plant care with automatic reservoir watering",
   "features": [
@@ -31,5 +31,7 @@
   "removed_features": [
     "external status LEDs"
   ],
-  "implementation_status": "Documentation and digital CAD only; app, firmware, backend and irrigation not implemented"
+  "implementation_status": "Editable CAD and a clickable HTML UI design prototype with sample data; no integrated mobile app, backend, device control or advice API.",
+  "mechanical_design": "03",
+  "app_design": "01"
 }

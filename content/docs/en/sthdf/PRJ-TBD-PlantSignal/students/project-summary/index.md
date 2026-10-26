@@ -150,7 +150,7 @@ Connect a physical plant-care prototype to a mobile app and automate routine wat
 - Automatic watering using a pump and refillable tank, with a locally enforced policy.
 - Mobile notifications and an in-app event log.
 - Photos and questions sent through a backend to an external plant-care API.
-- Printed sleeve, removable probe clip, dry enclosure and reservoir support; no status LEDs or LED openings.
+- Integrated enclosure, removable probe holder, fill lid and hidden service compartment; no status LEDs or LED openings.
 
 ## Proposed architecture
 
@@ -195,3 +195,7 @@ The scope now includes mechanics, embedded control, networking, backend, mobile 
 Agree the first mobile platform and framework, choose actual hardware and a photo-capable advice provider, and measure components before printing. Then prove sensing and local dosing before full integration.
 
 [Deliverables](../index.md)
+
+## Design progress
+
+[Integrated mechanical design and five interactive UI designs](../../../../../../../docs/DESIGN_PREVIEW.en.md) are available as prototypes with sample data; runtime hardware/services remain unimplemented.

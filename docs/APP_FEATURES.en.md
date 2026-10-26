@@ -1,6 +1,10 @@
 # Mobile app — agreed direction and proposed scope
 
-**Concept 02, 26 October 2026.** No app or backend has been built. Android/iOS priority and framework are to be selected by the team.
+**Concept 02, 26 October 2026.** A clickable HTML UI design prototype has been built; no integrated mobile app or backend exists. Android/iOS priority and framework are to be selected by the team.
+
+## Available design preview
+
+[Five first screen designs and the interactive prototype](DESIGN_PREVIEW.en.md) demonstrate navigation, plant/type editing, sample readings, example advice and local watering/refill feedback. No API or device calls occur.
 
 ## Requested features
 

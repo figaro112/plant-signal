@@ -134,45 +134,41 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Preparing a measurable 3D pot concept — revision 02
+# Preparing a measurable 3D pot concept — design 03
 
-**Local draft ID: K-LOCAL-001.** Updated 26 October 2026. No global course KNIFE number, physical fit test or working watering system is claimed.
+**K-LOCAL-001, repository-local draft.** Updated 26 October 2026. No allocated global course number, physical fit test or working device is claimed.
 
 ## Purpose
 
-Keep the mechanical design aligned with a changed product scope: mobile status and advice, connected sensors and reservoir/pump watering.
+Turn a disconnected component sketch into a coherent product concept while retaining actual editable geometry for review.
 
 ## Principle
 
-Separate printable support/enclosure parts from purchased water-contact hardware. Keep dimensions and illustrative objects explicit. Replace the indicator lid with a solid fastener-only lid and add a dry cradle for a bought reservoir.
+Use one rounded outer enclosure for the planting chamber, reservoir bay and service area. Separate five mechanical components and keep reference objects distinct from manufacturing parts. Present photorealistic concept art and actual CAD views with clear provenance.
 
-## Application
+## Application and quick guide
 
-Use the model to review the plant pot, probe position, tank support, dry enclosure and proposed tubing route before choosing hardware and printing. The illustrated pump and tank are reference envelopes, not validated selections.
-
-## Quick guide
-
-1. Open [the current model guide](../../../../../models/README.md) and [GLB assembly](../../../../../models/assembly-concept.glb).
-2. Inspect five STL components and the [editable source](../../../../../models/plant-signal.scad).
-3. Measure the chosen board, driver, pump, liner, tank and tube fittings.
-4. Revise mounting, ports and retention. Fit-test small samples, then verify water routing and local control on actual hardware.
+1. Open [the current model guide](../../../../../models/v3/README.md) and the actual [GLB assembly](../../../../../models/v3/assembly.glb).
+2. Rotate/explode the model in the local viewer and inspect the five STL components.
+3. Review the [exact CAD source](../../../../../models/v3/build_model.py) or the OpenSCAD counterpart.
+4. Measure real tank, pot/liner, controller, pump and connectors, then revise fit and printing strategy.
 
 ## Detailed article and observed digital results
 
-The initial 19 October concept had four printed components. The 26 October revision retains the sleeve, base and probe clip, removes the two indicator openings from the lid and adds a Ø92 × 20 mm reservoir cradle with Ø84 mm cavity. The lid has four fastener holes only. The existing 100 × 68 mm enclosure footprint is not confirmed for the proposed new hardware.
+The body footprint is 230 × 160 mm with a Ø134 mm planting cavity; the refill lid reaches 162 mm high. The small rear cover adds about 2 mm depth. The design exports main shell, base plinth, refill lid, rear service cover and sensor holder. Product status LEDs remain absent; the narrow front feature is a passive viewing-window concept.
 
-All five exported meshes were reloaded and checked for positive volume, a closed surface and one connected solid. The lid topology has four through-holes. See [the current mesh report](../../../../../models/mesh-validation.json). No print-fit, electrical or hydraulic result exists. OpenSCAD was not command-line compiled; equivalent Boolean geometry produced the supplied STLs.
+Each exported STL was reloaded with positive volume, a closed surface and one connected solid. The actual GLB loaded in a WebGL viewer and the exploded control changed the scene. See [the mesh report](../../../../../models/v3/mesh-validation.json) and [preview verification](../../../../../docs/DESIGN_PREVIEW.en.md).
 
 ## Tips and notes
 
-The tank and saucer must be bought watertight components for the first build. A dry printed cradle is not a tank. Test leaks, siphoning and flow; keep electronics separated. Do not treat the render as a working assembly or claim that a plant has been saved by an unimplemented advice service.
+The studio image was generated with imagegen and is not a literal CAD render or a photo of a built unit. The optional plant, reservoir, water, window, liner, pump and controller meshes are reference objects. Internal tank selection, leak/siphon behavior, fasteners, print supports/orientation and physical operation require experiments. OpenSCAD compilation was not performed; the Boolean Python source produced the exports.
 
 ## Value
 
-The team can trace how a scope change affected real digital artifacts and which assumptions still need measurements. A later contribution should report actual flow and print-fit experiments, including failed attempts.
+The team can review a plausible integrated form, inspect real downloadable geometry and see the app design direction without confusing those artifacts with a working connected product.
 
 ## References
 
-- [Mechanical concept 02](../../../../../models/README.md)
-- [Scope changes](../../../../../docs/SCOPE_CHANGELOG.en.md)
-- [Watering policy and planned tests](../../../../../docs/WATERING_CONTROL.en.md)
+- [Model guide](../../../../../models/v3/README.md)
+- [Product-image provenance and prompt](../../../../../assets/product/generation-notes.md)
+- [Design and scope record](../../../../../docs/SCOPE_CHANGELOG.en.md)

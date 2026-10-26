@@ -1,0 +1,92 @@
+{
+  "main-shell": {
+    "watertight": true,
+    "connected_solids": 1,
+    "triangles": 9362,
+    "bounds_mm": [
+      [
+        -115.0,
+        -80.0,
+        0.0
+      ],
+      [
+        115.0,
+        80.0,
+        145.0
+      ]
+    ],
+    "volume_mm3": 728059.27
+  },
+  "base-plinth": {
+    "watertight": true,
+    "connected_solids": 1,
+    "triangles": 3344,
+    "bounds_mm": [
+      [
+        -111.0,
+        -76.0,
+        0.0
+      ],
+      [
+        111.0,
+        76.0,
+        12.0
+      ]
+    ],
+    "volume_mm3": 340557.45
+  },
+  "refill-lid": {
+    "watertight": true,
+    "connected_solids": 1,
+    "triangles": 1292,
+    "bounds_mm": [
+      [
+        52.0,
+        -53.0,
+        0.0
+      ],
+      [
+        100.0,
+        53.0,
+        6.0
+      ]
+    ],
+    "volume_mm3": 26834.02
+  },
+  "rear-service-cover": {
+    "watertight": true,
+    "connected_solids": 1,
+    "triangles": 512,
+    "bounds_mm": [
+      [
+        -29.0,
+        79.0,
+        0.0
+      ],
+      [
+        29.0,
+        82.0,
+        30.0
+      ]
+    ],
+    "volume_mm3": 5092.11
+  },
+  "sensor-holder": {
+    "watertight": true,
+    "connected_solids": 1,
+    "triangles": 62,
+    "bounds_mm": [
+      [
+        -78.392,
+        46.804,
+        0.0
+      ],
+      [
+        -51.608,
+        69.196,
+        22.0
+      ]
+    ],
+    "volume_mm3": 3182.0
+  }
+}

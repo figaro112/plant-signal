@@ -133,16 +133,10 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Design — concept 02
+# Design — integrated enclosure and app preview
 
-The physical design now has a solid controller lid and an additional dry reservoir cradle. The tank, pump and tubing in the assembly are reference envelopes. Model the app/backend/device boundaries and locally bounded control before implementation; dimensions and water routing are untested.
+The active mechanical model is design 03: one rounded capsule enclosure, planting chamber, internal reservoir bay, refill lid, recessed base and hidden service cover. Exact CAD exports are supplied alongside an AI-generated studio visualization. Five HTML app-screen designs and a clickable local prototype are available; no backend/hardware integration exists.
 
-## Current design references
-
-- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
-- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
-- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
-- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
-- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
+[Design guide and screenshots](../../../../../../../../docs/DESIGN_PREVIEW.en.md) · [Current CAD](../../../../../../../../models/v3/README.md)
 
 [Project dashboard](../../../index.md)

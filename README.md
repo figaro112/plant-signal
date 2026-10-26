@@ -2,16 +2,25 @@
 
 **Mobile-connected plant care with sensor readings, photo-based guidance and automatic watering.**
 
-**Concept 02 — scope updated 26 October 2026.**
+**Design 03 — integrated planter and first app screens · 26 October 2026.**
 
-![PlantSignal digital concept](assets/hero.png)
+![PlantSignal industrial-design visualization](assets/hero.png)
+
+*Studio visualization. [Actual editable CAD and 3D downloads](models/v3/README.md) · [Image provenance](assets/product/generation-notes.md).*
+
+## First app screens
+
+![PlantSignal first app designs](assets/app/app-screens-v1.png)
+
+Five initial designs: **My plants, Plant detail, Care assistant, Watering and Plant profile**. The [clickable HTML prototype](prototypes/app/index.html) supports navigation, local profile edits and simulated feedback. [Screens, instructions and verification](docs/DESIGN_PREVIEW.en.md). All data and advice are illustrative; the prototype is not connected to hardware or a provider API.
 
 **Team:** Marek Hužvar · Matuš Plško · Richard Sič  
 **Working project ID:** `PRJ-TBD-PlantSignal` — no official project number assigned yet.  
-**Status:** requirements and revised digital CAD only. Mobile app, backend, firmware, irrigation and physical tests are not implemented.  
+**Status:** industrial design, editable CAD and a clickable UI design prototype. Real mobile/backend integration, firmware, irrigation and physical tests are not implemented.
+
 **Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), public at the last GitHub verification.
 
-This repository follows the [official STHDF class template](https://github.com/06-STH-Projects/2026_sthdf_class_template) referenced by [K000119 — class repository setup](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/). PlantSignal's own history is retained; CAD has evolved into concept 02. Upstream Git history is not imported.
+This repository follows the [official STHDF class template](https://github.com/06-STH-Projects/2026_sthdf_class_template) referenced by [K000119 — class repository setup](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/). PlantSignal's own history is retained; CAD has evolved into integrated design 03. Upstream Git history is not imported.
 
 **[English project dashboard →](content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md)** · **[Slovenský rozcestník →](content/docs/sk/sthdf/PRJ-TBD-PlantSignal/index.md)** · **[Slovenské zhrnutie →](docs/PROJECT_BRIEF.sk.md)**
 
@@ -33,10 +42,11 @@ This repository follows the [official STHDF class template](https://github.com/0
 - [SDLC — technical lifecycle](content/docs/en/sthdf/PRJ-TBD-PlantSignal/projects/sdlc/index.md)
 - [Q12 — product and value perspectives](content/docs/en/sthdf/PRJ-TBD-PlantSignal/projects/q12/index.md)
 - [Full concept and component list](docs/CONCEPT.en.md)
-- [3D model guide and STL downloads](models/README.md)
+- [Integrated 3D model and STL downloads](models/v3/README.md)
+- [Interactive 3D viewer](prototypes/model/index.html) · [App design guide](docs/DESIGN_PREVIEW.en.md)
 - [GLB assembly](models/assembly-concept.glb) · [Editable OpenSCAD](models/plant-signal.scad)
 
-The target system combines a sensor-equipped pot and refillable water reservoir with a mobile app. The device automatically doses water; the normal watering task for the owner is refilling the tank. The app stores a plant species/type profile, readings and history, sends notifications and accepts photos/questions for care guidance through an external API. Product status LEDs and their enclosure openings have been removed.
+The target system combines a sensor-equipped pot and refillable water reservoir in one integrated enclosure, linked to a mobile app. The device automatically doses water; the normal watering task for the owner is refilling the tank. The app stores a plant species/type profile, readings and history, sends notifications and accepts photos/questions for care guidance through an external API. Product status LEDs and their enclosure openings have been removed.
 
 Proposed implementation: a Wi-Fi-equipped ESP32 DevKit, soil-moisture and low-water sensing, a pump with suitable driver/power, and a backend for data, push and provider credentials. Watering is controlled locally with calibrated limits, independently of an open phone app or the photo service. Board, framework, providers and dose parameters are unselected.
 

@@ -148,3 +148,7 @@ Draft outline, not a completed slide deck. Confirm the teacher's current timing 
 No validated business model, market demand, certain plant diagnosis or recovery outcome is claimed.
 
 [Project Summary](../project-summary/index.md) · [Deliverables](../index.md)
+
+## First screen designs
+
+[App screen board](../../../../../../../assets/app/app-screens-v1.png) · [Prototype instructions and verified boundaries](../../../../../../../docs/DESIGN_PREVIEW.en.md)

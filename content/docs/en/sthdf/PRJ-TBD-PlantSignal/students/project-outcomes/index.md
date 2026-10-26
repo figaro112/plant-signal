@@ -133,19 +133,21 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Project Outcomes — current evidence
+# Project Outcomes — current design evidence
 
-**Concept 02, 26 October 2026.** Available outputs are documentation, CAD and renders only.
+**Integrated design 03 and app design 01, 26 October 2026.**
 
-| Available | Evidence | Limit |
+| Available output | Evidence | Boundary |
 |---|---|---|
-| Revised system scope | [Concept 02](../../../../../../../docs/CONCEPT.en.md) | Not a working system |
-| App and architecture proposal | [Architecture](../../../../../../../docs/ARCHITECTURE.en.md) | No app/backend/provider integration |
-| Watering control design | [Policy and planned tests](../../../../../../../docs/WATERING_CONTROL.en.md) | No flow, moisture or hydraulic measurements |
-| Five mechanical meshes | [CAD guide](../../../../../../../models/README.md) | No physical fit/printing test |
-| Solid controller lid and reservoir cradle | [Parts render](../../../../../../../assets/parts-render.png) | Bought tank/pump/tube envelopes are not final selections |
-| Digital mesh checks | [Mesh report](../../../../../../../models/mesh-validation.json) | Closed connected geometry, not proof of physical performance |
+| Photorealistic product visualization | [Studio concept](../../../../../../../assets/product/plantsignal-studio-v3.png) | AI-generated design image, not a manufactured-product photo |
+| Actual mechanical geometry | [GLB, five STL parts and source](../../../../../../../models/v3/README.md) | Fit, printing/supports and water operation untested |
+| Interactive 3D viewer | [Rotate / explode model](../../../../../../../prototypes/model/index.html) | Requires local HTTP server and WebGL |
+| Five initial app designs | [Screens and verification](../../../../../../../docs/DESIGN_PREVIEW.en.md) | Sample data, not native mobile/backend integration |
+| Clickable local UI | [App prototype](../../../../../../../prototypes/app/index.html) | Navigation, profile edits and simulated feedback only |
+| Requirements and control design | [Current scope](../../../../../../../docs/CONCEPT.en.md) | No physical sensing, pump or API operation |
 
-There are no implemented readings, automatic doses, mobile screens, notifications, advice API calls, plant-recovery results or completed physical demonstrations. Add real photos, measurements, logs and limitations as implementation proceeds.
+Browser checks covered screen rendering, navigation, species/profile editing, the local watering toggle, explicit simulated advice/refill feedback, narrow layout and actual GLB/exploded rendering. No browser page exceptions were reported. Exported STL meshes reloaded as closed positive-volume single solids.
+
+There are no real sensor readings, automatic doses, push deliveries, external photo-analysis calls or plant-recovery outcomes. Add actual experiment logs, hardware photos and measured results during implementation.
 
 [Deliverables](../index.md)
