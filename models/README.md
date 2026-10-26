@@ -1,42 +1,50 @@
-# Mechanical concept 01
+# Mechanical concept 02 — connected automatic watering
 
-All dimensions are in **millimetres**. These files describe an initial concept for discussion. No part has been printed, fitted to hardware or tested with water.
+**Revised 26 October 2026.** Units: **millimetres** for STL and OpenSCAD. No physical print, electrical fit or hydraulic test has been performed.
 
-![Printable parts](../assets/parts-render.png)
+![Concept 02 assembly](../assets/assembly-render.png)
 
-## Files
+The controller lid is solid except for its four fastener holes. The former LED holes and LED objects have been removed. A dry support cradle has been added for a purchased refillable tank. The app is the intended status/notification interface.
 
-| File | Purpose |
-|---|---|
-| [sleeve.stl](stl/sleeve.stl) | Ø144 × 130 mm decorative sleeve, 3 mm floor/wall and four Ø6 mm drain holes |
-| [electronics-base.stl](stl/electronics-base.stl) | 100 × 68 × 35 mm open box with lid screw bosses and approximate cable openings |
-| [electronics-lid.stl](stl/electronics-lid.stl) | 100 × 68 × 3 mm lid, four Ø3.4 mm screw holes and two Ø5.3 mm LED holes |
-| [sensor-clip.stl](stl/sensor-clip.stl) | 31 × 30 × 21 mm clip, 6 mm rim gap and 25 × 3.2 mm probe slot |
-| [plant-signal.scad](plant-signal.scad) | Editable OpenSCAD source for the printed components |
-| [assembly-concept.glb](assembly-concept.glb) | Coloured assembly with context objects for a 3D viewer |
-| [mesh-validation.json](mesh-validation.json) | Geometry checks on the exported STL meshes |
+## Files and dimensions
 
-STL does not encode units: choose mm in the slicer. GLB uses metres by specification; the assembly is exported with its mm coordinates converted to metres.
+| File | Intended purpose | Concept dimensions |
+|---|---|---|
+| [sleeve.stl](stl/sleeve.stl) | Decorative outer cover for bought pot and saucer | Ø144 × 130 mm; Ø138 cavity, 3 mm wall/floor, four drain holes |
+| [electronics-base.stl](stl/electronics-base.stl) | Dry controller/driver enclosure | 100 × 68 × 35 mm, approximate connector openings |
+| [electronics-lid.stl](stl/electronics-lid.stl) | Solid lid with four screw holes | 100 × 68 × 3 mm; four Ø3.4 mm holes, no indicator openings |
+| [sensor-clip.stl](stl/sensor-clip.stl) | Repeatable removable probe support | 31 × 30 × 21 mm; 6 mm rim gap, 25 × 3.2 mm probe slot |
+| [reservoir-cradle.stl](stl/reservoir-cradle.stl) | Dry support for a bought tank | Ø92 × 20 mm; Ø84 cavity, 3 mm floor |
+| [plant-signal.scad](plant-signal.scad) | Editable source of the five printed parts | Select a part or the assembly |
+| [assembly-concept.glb](assembly-concept.glb) | Coloured assembly with context objects | Geometry converted from mm to metres for GLB |
+| [mesh-validation.json](mesh-validation.json) | Exported-mesh checks | Closed surface, one solid, bounds and volume |
 
-The GLB plant, liner, soil, sensor and LEDs are illustrations, not supplied printable designs. A working board, wiring, saucer and fasteners are not represented in the assembly. The two LED colours illustrate the two possible states; in operation only the appropriate light would be on.
+STL does not encode units: choose mm in the slicer. The bought liner is an assumed Ø120 × 110 mm envelope and saucer Ø128 × 15 mm. The rendered tank is an assumed Ø80 × 100 mm envelope; it is not a selected product and its capacity is unknown. The current case footprint is retained as a starting point, not confirmed to fit the new controller/driver or power arrangement.
 
-## Editing
+![Five printable components](../assets/parts-render.png)
 
-Open `plant-signal.scad` in OpenSCAD. Set `part` to `sleeve`, `electronics-base`, `electronics-lid`, `sensor-clip` or `assembly`. Render before exporting an individual component as STL.
+## Printed versus illustrative objects
 
-Sleeve and enclosure dimensions have named parameters. Boss positions, port positions and clip geometry are fixed prototype values and must be adjusted separately if those parameters change substantially. No OpenSCAD command-line compilation was performed during preparation; the supplied STL files were generated from equivalent Boolean mesh geometry and independently checked for closed surfaces and connected solids.
+Only the five STL components are printable designs. The plant, liner, soil, probe, reservoir, cap, water, pump and tubing in the GLB/render are illustrations. The water route, pump placement, tube sizes, connectors and mounting must be redesigned around actual selected hardware. No app screens, wiring or working controller are represented.
 
-## Before printing
+The reservoir cradle is not a watertight reservoir. Use a bought tank initially. The sleeve drains through its floor and needs a separate bought watertight saucer. The controller enclosure is not waterproof.
 
-1. Measure the liner and saucer; the cavity is Ø138 mm and 127 mm deep. The assumed liner and saucer stack is 125 mm high. Check real diameters along the full height, including flanges.
-2. Measure the actual board, its USB plug, sensor connector and cables. The case has approximately 94 × 62 mm of internal space before corner bosses. USB and probe ports are placeholders. Add board mounting points or an insulating carrier after measuring the board; do not leave it loose in the finished enclosure.
-3. Measure the probe and sleeve rim. The generic clip is not a tested friction fit, and may need a shim, screw or redesign for reliable retention. Keep sensor components above soil and away from splash water.
-4. Print a small clip or hole sample first. Then check the full assembly in the slicer. Rotate/place each STL onto a flat bed face; the clip's coordinates intentionally retain its offset relative to the pot.
-5. Try 0.2 mm layers and an appropriate PLA/PETG profile as starting points. The clip bridge or enclosure openings may require changed orientation or local support. Confirm in the slicer; support-free printing is not verified.
-6. Select four appropriate screws and test the Ø2.6 mm pilot holes in scrap material. Do not force an unsuitable screw into the bosses.
+## Editing and fit work
 
-The sleeve drains through its floor and is not a water reservoir. The bought inner saucer must contain drainage. Keep the separate electronics box away from spill paths.
+Open `plant-signal.scad` and set `part` to `sleeve`, `electronics-base`, `electronics-lid`, `sensor-clip`, `reservoir-cradle` or `assembly`. Render before exporting the chosen component. Sleeve/enclosure dimensions have named parameters; screw posts, ports and clip geometry also need explicit adjustment when dimensions change.
 
-## Digital verification and limits
+Before a printing release:
 
-The geometry check verifies that every exported STL is watertight, has positive volume and consists of one connected solid. This only checks digital mesh quality. It does not establish dimensional accuracy, printability, material strength, leak resistance, assembly fit or sensor performance. See the generated JSON for bounds and volumes.
+1. Measure the actual pot, saucer, refillable tank, pump, board, driver, connectors and tubing.
+2. Add proper board/pump mounting, cable retention and a removable tube support; verify refill and service access.
+3. Keep sensor components and electronics outside soil/water exposure. Validate the water path, passive flow/siphoning, leaks and low-water stop on real hardware.
+4. Trial-print clip/fastener samples and inspect orientation/supports in the slicer before full printing. A 0.2 mm layer profile is a starting point, not a verified setting.
+5. Test screw selection against the Ø2.6 mm pilot holes. Reposition ports for the chosen new hardware; old positions are placeholders.
+
+## Verification and limits
+
+Each exported STL was reloaded and checked for a watertight surface, positive volume and one connected solid. The lid's topology was checked for exactly four through-holes corresponding to fasteners. OpenSCAD command-line compilation was not performed; exports were made from equivalent Boolean geometry. These checks do not prove printability, strength, electrical fit, dose accuracy, leak resistance or reliable watering.
+
+The original concept remains available in Git history. Current files intentionally supersede the indicator-based concept; the migration's old-byte preservation check is a historical audit, not the acceptance test for this revision.
+
+[Current product scope](../docs/CONCEPT.en.md) · [Watering policy](../docs/WATERING_CONTROL.en.md)

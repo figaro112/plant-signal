@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "architecture diagram"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"
@@ -133,12 +133,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# architecture diagram
+# Architecture — proposed boundaries
 
-**Status: planning placeholder.** This section is reserved for PlantSignal work in the STHDF structure. No implementation, experiment or personal reflection is claimed here.
+Use the linked architecture as the current design input for an EA/system model. Separate mobile, backend, advice/push services, device control and physical water path. Model normal, offline, low-water, fault and restart scenarios. No validated EA model is supplied by this change.
 
-## To complete
+## Current design references
 
-Record the relevant decision, actual evidence, responsible team member and next step when work starts.
+- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
+- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
+- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
+- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
 
-[Back](../index.md)
+[Project dashboard](../../../index.md)

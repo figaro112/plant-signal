@@ -1,5 +1,5 @@
-// PlantSignal concept 01. Units: mm. No physical fit test has been performed.
-// Select: "assembly", "sleeve", "electronics-base", "electronics-lid", "sensor-clip".
+// PlantSignal concept 02 (2026-10-26). Units: mm. No physical fit test performed.
+// Select: "assembly", "sleeve", "electronics-base", "electronics-lid", "sensor-clip", "reservoir-cradle".
 // Assembly shows printed parts only. Hardware dimensions are assumptions.
 part = "assembly";
 $fn = 96;
@@ -38,7 +38,6 @@ module electronics_lid() {
     difference() {
         block([case_x,case_y,3],[0,0,1.5]);
         for(x=[-44,44],y=[-28,28]) post(1.7,6,[x,y,1.5]);
-        for(x=[-12,12]) post(2.65,6,[x,-12,1.5]);
     }
 }
 module sensor_clip() {
@@ -53,13 +52,22 @@ module sensor_clip() {
         block([25,3.2,12],[0,-53.5,132]);
     }
 }
+// Dry support for a purchased refillable reservoir. This is not a water container.
+module reservoir_cradle() {
+    difference() {
+        post(46,20,[0,0,10]);
+        post(42,22,[0,0,14]);
+    }
+}
 if(part=="sleeve") sleeve();
 else if(part=="electronics-base") electronics_base();
 else if(part=="electronics-lid") electronics_lid();
 else if(part=="sensor-clip") sensor_clip();
+else if(part=="reservoir-cradle") reservoir_cradle();
 else {
     color("Wheat") sleeve();
     color("DarkSlateGray") translate([136,0,0]) electronics_base();
     color("SeaGreen") translate([136,0,35]) electronics_lid();
     color("Orange") translate([0,0,115]) sensor_clip();
+    color("SeaGreen") translate([-132,0,0]) reservoir_cradle();
 }

@@ -17,5 +17,19 @@
   "history_policy": "Keep PlantSignal commits; do not import upstream Git history.",
   "disabled_upstream_workflows": true,
   "visibility_observed": "2026-10-19",
-  "visibility_note": "GitHub reported public at post-push verification; this migration did not change repository visibility."
+  "visibility_note": "GitHub reported public at post-push verification; this migration did not change repository visibility.",
+  "concept_version": "02",
+  "scope_updated": "2026-10-26",
+  "product": "Mobile-connected plant care with automatic reservoir watering",
+  "features": [
+    "plant-type profiles",
+    "timestamped sensor data and history",
+    "notifications",
+    "photos and external plant-care API questions",
+    "automatic watering from a refillable reservoir"
+  ],
+  "removed_features": [
+    "external status LEDs"
+  ],
+  "implementation_status": "Documentation and digital CAD only; app, firmware, backend and irrigation not implemented"
 }

@@ -3,7 +3,7 @@ import {themes} from 'prism-react-renderer';
 // Project-only preview. Upstream configuration is retained unchanged.
 const config: Config = {
   title: 'PlantSignal — STHDF',
-  tagline: 'A desk plant reminder: concept, design and evidence',
+  tagline: 'Connected plant care and automatic watering: concept and evidence',
   url: 'https://figaro112.github.io',
   baseUrl: '/plant-signal/',
   organizationName: 'figaro112',

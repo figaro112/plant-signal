@@ -1,56 +1,38 @@
-# PlantSignal — návrh na tímové stretnutie
+# PlantSignal — mobilná aplikácia a automatické zalievanie
 
-[Projekt v štruktúre STHDF](../content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md) · [Sedem povinných sekcií](../content/docs/en/sthdf/PRJ-TBD-PlantSignal/students/index.md)
+**Aktualizácia konceptu: 26. októbra 2026.** Tím: Marek Hužvar, Matuš Plško a Richard Sič. Označenie projektu zostáva dočasné: PRJ-TBD-PlantSignal.
 
-**Tím:** Marek Hužvar, Matuš Plško, Richard Sič  
-**Stretnutie:** 20. októbra 2026  
-**Stav:** nápad a digitálny 3D koncept; zatiaľ bez zapojenia, programu a fyzických skúšok.
+![Koncept 02](../assets/hero.png)
 
-![Koncept kvetináča PlantSignal](../assets/hero.png)
+## Čo chceme vyrobiť
 
-## Návrh v jednej minúte
+Kvetináč so senzormi, zásobníkom vody a čerpadlom, prepojený s mobilnou aplikáciou. Systém bude sám dávkovať vodu podľa nastavených a overených podmienok. Pri bežnom zalievaní používateľ iba doplní vodu do nádržky.
 
-Chceme vyrobiť malý stolový kvetináč, ktorý svetlom upozorní na suchú pôdu. Sonda v substráte zmeria hodnotu, Arduino ju vyhodnotí a rozsvieti červenú alebo zelenú LED. Polievanie zostáva ručné. Zmyslom je vytvoriť užitočný fyzický predmet a ukázať celý postup od nápadu cez návrh po overenie.
+V aplikácii bude profil rastliny s jej druhom, aktuálne merania, história a upozornenia. Používateľ pridá fotku a otázku; cez backend sa zavolá externé API a zobrazia sa možné príčiny problému a odporúčané kroky starostlivosti. Iné zásahy do starostlivosti zostávajú na človeku.
 
-## Čo vyrobíme sami
+**Červenú a zelenú LED na kvetináči rušíme úplne.** Stav a upozornenia budú v aplikácii; 3D veko už nemá otvory na kontrolky.
 
-- Vlastný 3D tlačený obal na kúpený kvetináč s podmiskou.
-- Odnímateľný držiak sondy, aby merala v rovnakej hĺbke.
-- Samostatnú skrinku na Arduino s dvoma kontrolkami a otvormi na káble.
-- Neskôr jednoduché zapojenie a program na vyhodnotenie merania.
+## Ako to má spolupracovať
 
-Všetky štyri tlačené diely sú pripravené ako [STL](../models/stl/). Rozmery sa musia upraviť podľa reálneho kvetináča, sondy a dosky. Model nie je potvrdený ako pripravený na finálnu tlač.
+- Snímač vlhkosti a snímanie nedostatku vody poskytujú údaje riadiacej doske.
+- Doska s Wi-Fi, predbežne vhodný ESP32 DevKit, vykonáva lokálne obmedzené zalievanie.
+- Backend ukladá údaje, pripravuje notifikácie a sprostredkuje volania externého API.
+- Mobilná aplikácia zobrazuje stav, druh rastliny, fotky, históriu a rady.
 
-## Aké zručnosti potrebujeme
+Zalievanie nebude závisieť od otvorenej aplikácie. Prázdna nádržka, neplatný snímač alebo prekročený limit dávky zastavia čerpanie. Rada z API nesmie sama prepnúť čerpadlo ani zmeniť limity.
 
-Základy 3D modelovania a tlače, prepojenie vodičov podľa schémy, nahratie programu cez USB a jednoduché meranie. Prvý elektronický prototyp môže byť na kontaktnom poli bez spájkovania. Arduino aj snímač budú napájané nízkym napätím; elektroniku treba umiestniť mimo vody a pred prepojovaním odpojiť napájanie.
+## Čo sa mení na fyzickom prototype
 
-## Rozpočet
+Zostáva obal na kúpený kvetináč s podmiskou a držiak sondy. Skrinka elektroniky má plné veko. Pribudol koncept tlačeného stojana na kúpenú vodotesnú nádržku; čerpadlo, hadičky a konkrétny spôsob merania vody ešte vyberieme. Obrázok je návrh, nie potvrdené zapojenie alebo otestovaná hydraulika.
 
-Samotná sonda má v konkrétnej overenej ponuke cenu **1,35 € s DPH bez dopravy**; dva kusy by stáli 2,70 €. [Ponuka Drotik Elektro](https://www.drotik-elektro.sk/arduino-platforma/4875-podny-analogovy-vlhkomer-s-antikoroznou-sondou-v1.2.html), kontrolovaná 19. 10. 2026. Ide o lacný V1.2 variant, nie originál DFRobot SEN0193.
+## Postup
 
-Celkový rozpočet zatiaľ neurčujeme: najprv zistíme, či nám laboratórium poskytne Arduino, vodiče, LED a materiál na tlač. Potrebujeme aj kvetináč, podmisku, rastlinu a USB napájanie.
+1. Vyberieme dosku, snímače, čerpadlo, nádržku a konkrétny kvetináč; zmeriame ich.
+2. Rozchodíme merania a zobrazíme ich v základnej aplikácii spolu s profilom rastliny.
+3. Zmeriame prietok čerpadla a odladíme dávkovanie, prestávky a zastavenie pri nedostatku vody.
+4. Doplníme backend, históriu, notifikácie a volanie API s fotkami a otázkami.
+5. Upravíme 3D diely, zložíme prototyp, otestujeme aj výpadky a zdokumentujeme výsledky.
 
-## Čo ukážeme pri obhajobe
+Mobilný framework, prvá platforma, poskytovateľ API, hosting, termíny, rozpočet a finálne roly ešte nie sú dohodnuté. Osobné profily a ST čísla doplnia členovia. Aplikácia ani automatické zalievanie zatiaľ nie sú implementované.
 
-Dve vzorky rovnakého substrátu — suchú a vlhkú. Pri rovnakej hĺbke zasunutia sondy ukážeme meranie a zmenu kontrolky. Pridáme vlastný obal, fotky prototypov a vysvetlenie, čo sme po skúšaní zmenili. Hranicu upozornenia nastavíme meraním pre zvolený substrát; nie je univerzálna pre všetky rastliny.
-
-## Predbežné rozdelenie, ktoré si ešte odsúhlasíme
-
-| Člen | Navrhovaná oblasť |
-|---|---|
-| Marek Hužvar | 3D model, uchytenie a tlač |
-| Matuš Plško | Elektronika a neskôr Arduino program |
-| Richard Sič | Kalibrácia, testovanie a prezentácia |
-
-Každý bude mať aj vlastný KNIFE príspevok. Dokumentáciu a integráciu riešime spoločne. Hlavná stránka a finálne znalostné výstupy budú v angličtine podľa zadania predmetu.
-
-## Čo rozhodnúť zajtra
-
-1. Chceme tento projekt všetci traja?
-2. Čo vieme dostať v laboratóriu a čo treba kúpiť?
-3. Aký kvetináč a rastlinu použijeme?
-4. Ako rozdelíme prácu a kedy chceme prvý prototyp?
-5. Aké GitHub účty majú kolegovia, aby im vlastník sprístupnil súkromný repozitár [figaro112/plant-signal](https://github.com/figaro112/plant-signal)?
-
-Čerpadlo, Wi-Fi alebo displej môžu prísť neskôr. Na začiatok sa sústredíme na overené meranie a dve kontrolky.
+[Projektový dashboard](../content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md) · [Architektúra](ARCHITECTURE.en.md) · [3D modely](../models/README.md)

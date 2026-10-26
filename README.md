@@ -1,15 +1,17 @@
 # PlantSignal 🌱 — STHDF 2026–2027
 
-**A desk plant pot that reminds its user to check dry soil.**
+**Mobile-connected plant care with sensor readings, photo-based guidance and automatic watering.**
+
+**Concept 02 — scope updated 26 October 2026.**
 
 ![PlantSignal digital concept](assets/hero.png)
 
 **Team:** Marek Hužvar · Matuš Plško · Richard Sič  
 **Working project ID:** `PRJ-TBD-PlantSignal` — no official project number assigned yet.  
-**Status:** concept and digital CAD; electronics, printing, calibration and physical tests have not started.  
+**Status:** requirements and revised digital CAD only. Mobile app, backend, firmware, irrigation and physical tests are not implemented.  
 **Repository:** [figaro112/plant-signal](https://github.com/figaro112/plant-signal), public at the last GitHub verification.
 
-This repository follows the [official STHDF class template](https://github.com/06-STH-Projects/2026_sthdf_class_template) referenced by [K000119 — class repository setup](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/). PlantSignal's existing history and CAD are preserved; upstream Git history is not imported.
+This repository follows the [official STHDF class template](https://github.com/06-STH-Projects/2026_sthdf_class_template) referenced by [K000119 — class repository setup](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/). PlantSignal's own history is retained; CAD has evolved into concept 02. Upstream Git history is not imported.
 
 **[English project dashboard →](content/docs/en/sthdf/PRJ-TBD-PlantSignal/index.md)** · **[Slovenský rozcestník →](content/docs/sk/sthdf/PRJ-TBD-PlantSignal/index.md)** · **[Slovenské zhrnutie →](docs/PROJECT_BRIEF.sk.md)**
 
@@ -34,7 +36,14 @@ This repository follows the [official STHDF class template](https://github.com/0
 - [3D model guide and STL downloads](models/README.md)
 - [GLB assembly](models/assembly-concept.glb) · [Editable OpenSCAD](models/plant-signal.scad)
 
-The intended MVP uses a capacitive soil probe, an Arduino Uno R3 and two LEDs, powered over USB. A printed sleeve surrounds a purchased liner and saucer; a removable clip holds the probe, and a separate box houses the controller. Watering remains manual. Dimensions are assumptions until checked against actual hardware.
+The target system combines a sensor-equipped pot and refillable water reservoir with a mobile app. The device automatically doses water; the normal watering task for the owner is refilling the tank. The app stores a plant species/type profile, readings and history, sends notifications and accepts photos/questions for care guidance through an external API. Product status LEDs and their enclosure openings have been removed.
+
+Proposed implementation: a Wi-Fi-equipped ESP32 DevKit, soil-moisture and low-water sensing, a pump with suitable driver/power, and a backend for data, push and provider credentials. Watering is controlled locally with calibrated limits, independently of an open phone app or the photo service. Board, framework, providers and dose parameters are unselected.
+
+- [Proposed architecture](docs/ARCHITECTURE.en.md)
+- [Mobile app features](docs/APP_FEATURES.en.md)
+- [Watering control and planned tests](docs/WATERING_CONTROL.en.md)
+- [Scope change record](docs/SCOPE_CHANGELOG.en.md)
 
 ## KNIFE contributions
 
@@ -57,8 +66,8 @@ content/docs/sk/sthdf/  Slovak entry point
 core/                  Official tools and source templates
 config/plant-signal/   Project-specific metadata and generator settings
 publishing/docusaurus/ Optional documentation renderer
-models/                Original CAD, STL and GLB files
-assets/                Original illustrations
+models/                Current CAD, five STL parts and GLB assembly
+assets/                Current concept illustrations
 docs/                  Concept, Slovak brief and migration record
 ```
 
@@ -80,11 +89,11 @@ The optional configuration renders only this project's documentation and does no
 
 1. Obtain the official project number and individual ST roster IDs; replace temporary identifiers consistently.
 2. Complete personal profiles, agree responsibilities and review project scope.
-3. Check lab stock and measure actual hardware before printing.
+3. Choose controller/sensors, pump, tank, mobile framework and API provider; check lab stock and measure actual hardware before printing.
 4. Implement and test; add real evidence and personal reflections as work progresses.
 5. Share the repository link as instructed. The teacher handles class-dashboard integration; this repository does not push to the template or class repository.
 
-No firmware is included. GitHub currently reports the repository as public; this migration did not change its visibility. No separate website is published. The source can be cloned with:
+No mobile app, backend, firmware or external API integration is included. GitHub currently reports the repository as public; this migration did not change its visibility. No separate website is published. The source can be cloned with:
 
 ```sh
 git clone https://github.com/figaro112/plant-signal.git

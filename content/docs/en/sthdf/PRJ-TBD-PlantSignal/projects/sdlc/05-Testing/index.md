@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "Testing — plan, not completed results"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -133,16 +133,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Testing — plan, not completed results
+# Verification plan — not completed results
 
-| Planned check | Evidence to collect | State |
-|---|---|---|
-| Mechanical fit and USB access | Real component measurements and assembly photos | Not started |
-| Dry versus watered sample | Same substrate, repeatable insertion depth, settled raw readings | Not started |
-| Stable light near threshold | Recorded behavior with averaging and hysteresis | Not started |
-| Repeatable probe placement | Repeated measurements after removing and reinserting the probe | Not started |
-| Digital mesh validity | [STL geometry report](../../../../../../../../models/mesh-validation.json) | Digital check available; does not prove physical fit |
+Test sensor calibration and freshness, dosing volume and settling, empty-tank stop, pump-off flow/leaks, sensor disconnect, blocked delivery, restart and duplicated messages. Test the app-to-device data path, profile association, history, push-permission/offline states and real/advice-API error responses. Only digital mesh and documentation checks exist so far.
 
-Set acceptance tolerances before the final test. Do not replace measured results with expected values.
+## Current design references
 
-[SDLC](../index.md)
+- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
+- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
+- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
+- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
+
+[Project dashboard](../../../index.md)

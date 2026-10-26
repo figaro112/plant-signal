@@ -10,6 +10,7 @@ for section in SECTIONS:
     if not (PROJECT/'students'/section/'index.md').is_file():errors.append('Missing deliverable: '+section)
 files=[ROOT/'README.md',ROOT/'docs/CONCEPT.en.md',ROOT/'docs/PROJECT_BRIEF.sk.md',ROOT/'docs/TEMPLATE_MIGRATION.md',ROOT/'models/README.md',*PROJECT.rglob('*.md'),*ROOT.glob('content/docs/en/knifes/K-LOCAL-*/**/*.md'),*ROOT.glob('content/docs/sk/sthdf/'+META['project_folder']+'/**/*.md')]
 guids=set();ids=set();links=0
+files.extend(ROOT/'docs'/name for name in ['ARCHITECTURE.en.md','APP_FEATURES.en.md','WATERING_CONTROL.en.md','SCOPE_CHANGELOG.en.md'])
 for p in files:
     text=p.read_text(encoding='utf-8');rel=p.relative_to(ROOT).as_posix()
     if rel.startswith('content/'):

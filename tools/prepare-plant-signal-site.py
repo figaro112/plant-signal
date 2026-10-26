@@ -9,6 +9,7 @@ mapping={ROOT/'README.md':DOCS/'index.md'}
 mapping.update({p:DOCS/'project'/p.relative_to(P) for p in P.rglob('*.md')})
 mapping.update({p:DOCS/'knifes'/p.parent.name/'index.md' for p in ROOT.glob('content/docs/en/knifes/K-LOCAL-*/index.md')})
 for source,name in [('docs/CONCEPT.en.md','concept.md'),('docs/PROJECT_BRIEF.sk.md','brief.sk.md'),('docs/TEMPLATE_MIGRATION.md','template-migration.md'),('models/README.md','models.md'),('LICENSE','license-code.md'),('LICENSE-DOCS','license-docs.md')]:mapping[ROOT/source]=DOCS/'reference'/name
+for source,name in [('ARCHITECTURE.en.md','architecture.md'),('APP_FEATURES.en.md','mobile-app.md'),('WATERING_CONTROL.en.md','watering.md'),('SCOPE_CHANGELOG.en.md','scope-change-log.md')]:mapping[ROOT/'docs'/source]=DOCS/'reference'/name
 def rewrite(source,dest,target):
     if target.startswith(('https://','http://','mailto:','#')):return target
     filepart,sep,anchor=target.partition('#');path=(source.parent/filepart).resolve()

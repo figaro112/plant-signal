@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -135,19 +135,11 @@ fm_reserved2: ""
 
 # Knowledge Contribution
 
-The contributions below follow the KNIFE structure: purpose, principle, application, quick guide, detailed article, tips and value. `K-LOCAL-*` are repository-local draft identifiers, not globally assigned KNIFE numbers.
+Two repository-local KNIFE drafts record digital work. Their identifiers are not allocated global course numbers.
 
-| Local draft | What is evidenced | Status |
-|---|---|---|
-| [K-LOCAL-001 — 3D concept preparation](../../../../knifes/K-LOCAL-001-PlantSignal-3D-Concept/index.md) | Four digital meshes, dimensions and geometry checks | Draft; physical fit untested |
-| [K-LOCAL-002 — STHDF repository setup](../../../../knifes/K-LOCAL-002-STHDF-Repository-Setup/index.md) | Template import, generated hierarchy and preserved project history | Draft; class registration pending |
+- [K-LOCAL-001 — measurable mechanical concept, revised to concept 02](../../../../knifes/K-LOCAL-001-PlantSignal-3D-Concept/index.md): five printed meshes, lid revision and dry reservoir support; physical fit untested.
+- [K-LOCAL-002 — course repository setup](../../../../knifes/K-LOCAL-002-STHDF-Repository-Setup/index.md): original template import and independent project history.
 
-## Proposed individual contributions
-
-- Marek Hužvar: clip design and print-fit experiment.
-- Matuš Plško: connecting and reading the chosen probe.
-- Richard Sič: dry/watered sample comparison and threshold selection.
-
-These are suggested future topics. Each member should add their own procedure and observed results. No hardware experiment has been completed.
+Proposed future topics: Marek — mechanical/print integration; Matuš — sensing, pump control and communications; Richard — mobile/backend/API integration and end-to-end verification. Assignments remain to be agreed and work is shared across integration and measurements. No real app, API, watering or plant-recovery result exists yet.
 
 [Deliverables](../index.md)

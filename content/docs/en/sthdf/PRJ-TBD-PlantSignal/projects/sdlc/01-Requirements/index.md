@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "Requirements — proposed MVP"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -133,15 +133,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Requirements — proposed MVP
+# Requirements — concept 02
 
-- Read one chosen capacitive soil probe and indicate two moisture states.
-- Calibrate for one selected substrate and plant; use consistent insertion depth.
-- Use manual watering and USB low-voltage power.
-- Hold the liner, probe and electronics in a usable assembly; keep electronics outside water exposure.
-- Make the enclosure serviceable and the probe removable.
-- Record actual test conditions and limitations in the documentation.
+Capture plant type, sensor readings, notifications, photos/questions via an external API and automatic watering from a refillable tank. Remove product status LEDs. Separate the confirmed feature list from proposed hardware, frameworks and providers.
 
-These requirements await team and teacher review. Exact thresholds, acceptable variation and acceptance criteria will be selected after a bench experiment.
+## Current design references
 
-[Project Summary](../../../students/project-summary/index.md) · [SDLC](../index.md)
+- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
+- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
+- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
+- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
+
+[Project dashboard](../../../index.md)

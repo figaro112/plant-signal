@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "Design — digital concept"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -133,14 +133,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Design — digital concept
+# Design — concept 02
 
-The first design has a Ø144 × 130 mm sleeve, a removable probe clip and a separate 100 × 68 mm controller enclosure with lid. It assumes a bought liner and saucer. All physical fits are untested.
+The physical design now has a solid controller lid and an additional dry reservoir cradle. The tank, pump and tubing in the assembly are reference envelopes. Model the app/backend/device boundaries and locally bounded control before implementation; dimensions and water routing are untested.
 
-- [Dimensions, editable CAD and STL files](../../../../../../../../models/README.md)
-- [Exploded digital view](../../../../../../../../assets/parts-render.png)
-- [Full concept](../../../../../../../../docs/CONCEPT.en.md)
+## Current design references
 
-Next: measure the actual components, agree connector and mounting positions, print a small fit sample and revise the design.
+- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
+- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
+- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
+- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
 
-[SDLC](../index.md)
+[Project dashboard](../../../index.md)

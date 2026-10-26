@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "Pitch Presentation — draft outline"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -133,17 +133,18 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Pitch Presentation — draft outline
+# Pitch Presentation — concept 02 outline
 
-This is a concept pitch outline, not a completed slide deck or delivered presentation. The template suggests 5–7 minutes plus discussion; confirm the actual course instructions.
+Draft outline, not a completed slide deck. Confirm the teacher's current timing instructions.
 
-1. **Problem:** a desk plant can be forgotten; the user wants a simple visible reminder.
-2. **Solution:** a capacitive probe and red/green indicator in a custom physical design; manual watering.
-3. **Value and scope:** one selected plant and substrate, a small fabrication project and reproducible measurement. No market validation is claimed.
-4. **Concept demo:** show [the assembly render](../../../../../../../assets/hero.png) and [the CAD parts](../../../../../../../models/README.md); say explicitly that these are digital.
-5. **Team and plan:** show proposed responsibilities and the milestones in the [Project Summary](../project-summary/index.md).
-6. **Request for feedback:** confirm feasibility, lab access, available components and whether the topic overlaps with another team.
+1. **Problem:** the user wants help with routine watering and understanding plant condition.
+2. **Physical solution:** sensors, a refillable tank and bounded automatic pump watering in a custom assembly.
+3. **Mobile solution:** plant type profiles, readings/history, notifications and photos/questions for API-mediated care advice.
+4. **User routine:** refill the reservoir; follow relevant care advice. There are no pot status LEDs.
+5. **Architecture:** local device control plus backend/mobile services; no dependency on an open phone app for an approved local cycle.
+6. **Current evidence:** show [the revised digital concept](../../../../../../../assets/hero.png), explicitly identifying it as unbuilt.
+7. **Plan and feedback:** confirm scope, hardware, framework, provider, budget and integration responsibilities.
 
-An optional future modular kit is only a product hypothesis. There is no pricing, sales forecast or validated business model.
+No validated business model, market demand, certain plant diagnosis or recovery outcome is claimed.
 
-[Deliverables](../index.md)
+[Project Summary](../project-summary/index.md) · [Deliverables](../index.md)

@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -138,7 +138,7 @@ fm_reserved2: ""
 **ST roster ID:** not assigned / to confirm.  
 **GitHub profile:** to be supplied by this member.  
 **Contact:** optional; to be supplied by this member.  
-**Proposed focus:** Electronics and later Arduino implementation — subject to team agreement.
+**Proposed focus:** Controller, sensors, pump and device communications — subject to team agreement.
 
 ## Professional interests and experience
 

@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -138,8 +138,8 @@ fm_reserved2: ""
 | Member | ST roster ID | Proposed focus |
 |---|---|---|
 | [Marek Hužvar](marek-huzvar.md) | Not assigned | CAD and print preparation; proposed, unconfirmed |
-| [Matuš Plško](matus-plsko.md) | Not assigned | Electronics and later Arduino implementation; proposed, unconfirmed |
-| [Richard Sič](richard-sic.md) | Not assigned | Calibration, testing and presentation; proposed, unconfirmed |
+| [Matuš Plško](matus-plsko.md) | Not assigned | Controller, sensors, pump and device communications; proposed, unconfirmed |
+| [Richard Sič](richard-sic.md) | Not assigned | Mobile/backend/API integration and shared verification; proposed, unconfirmed |
 
 The team members' names are provided by the team. GitHub account ownership, email, interests, prior experience and personal goals have not been supplied for individual profiles; each member should complete their own page. The repository owner account is `figaro112`.
 

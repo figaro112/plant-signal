@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "01.D1 Management"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"
@@ -133,23 +133,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# 01.D1 Management
+# D1 — management of concept 02
 
-**Status: planning placeholder.** This section is reserved for PlantSignal work in the STHDF structure. No implementation, experiment or personal reflection is claimed here.
+Reconfirm scope, stack, budget, capacity and roles for the expanded mobile/backend/device/mechanical work. Suggested workstreams are Marek: mechanics/integration; Matuš: device/sensors/pump; Richard: app/backend/API. These are proposals; everyone shares integration and evidence.
 
-## To complete
+## Current design references
 
-Record the relevant decision, actual evidence, responsible team member and next step when work starts.
+- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
+- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
+- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
+- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
 
-## Sections
-
-- [01.Goals-Expectation](01.Goals-Expectation/index.md)
-- [02.Plans-Milestones](02.Plans-Milestones/index.md)
-- [02.Strategy](02.Strategy/index.md)
-- [03.Plans-Roadmaps](03.Plans-Roadmaps/index.md)
-- [04.Decisions](04.Decisions/index.md)
-- [05.WorkActivitiesEvidence](05.WorkActivitiesEvidence/index.md)
-- [06.Reportings](06.Reportings/index.md)
-- [07.Publishing](07.Publishing/index.md)
-
-[Back](../index.md)
+[Project dashboard](../../../index.md)

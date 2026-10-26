@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "feasibility study"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"
@@ -133,12 +133,16 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# feasibility study
+# Feasibility study — pending
 
-**Status: planning placeholder.** This section is reserved for PlantSignal work in the STHDF structure. No implementation, experiment or personal reflection is claimed here.
+Choose one pot/plant/device first. Measure actual hardware; calibrate moisture and pump flow; establish low-water inhibition and passive-flow behavior. Prototype one timestamped reading path and one photo-advice request before choosing the complete stack. API capabilities and pricing are not verified for any selected provider because none is selected.
 
-## To complete
+## Current design references
 
-Record the relevant decision, actual evidence, responsible team member and next step when work starts.
+- [Current concept](../../../../../../../../docs/CONCEPT.en.md)
+- [Architecture](../../../../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../../../../docs/APP_FEATURES.en.md)
+- [Watering policy](../../../../../../../../docs/WATERING_CONTROL.en.md)
+- [Change record](../../../../../../../../docs/SCOPE_CHANGELOG.en.md)
 
-[Back](../index.md)
+[Project dashboard](../../../index.md)

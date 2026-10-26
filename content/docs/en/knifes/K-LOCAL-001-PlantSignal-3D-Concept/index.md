@@ -74,7 +74,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -134,45 +134,45 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Preparing a measurable 3D pot concept
+# Preparing a measurable 3D pot concept — revision 02
 
-**Local draft ID:** K-LOCAL-001. A global course KNIFE number has not been allocated. This article records digital preparation only.
+**Local draft ID: K-LOCAL-001.** Updated 26 October 2026. No global course KNIFE number, physical fit test or working watering system is claimed.
 
 ## Purpose
 
-Turn the plant reminder idea into inspectable mechanical components before purchasing or assembling hardware.
+Keep the mechanical design aligned with a changed product scope: mobile status and advice, connected sensors and reservoir/pump watering.
 
 ## Principle
 
-Separate the purchased liner and saucer from the decorative printed sleeve. Put the controller in a separate box and use a removable clip to control probe placement. Keep assumptions visible so a digital illustration is not mistaken for a tested device.
+Separate printable support/enclosure parts from purchased water-contact hardware. Keep dimensions and illustrative objects explicit. Replace the indicator lid with a solid fastener-only lid and add a dry cradle for a bought reservoir.
 
 ## Application
 
-Use the model to discuss dimensions, part boundaries and access to LEDs and connectors. Measure the actual hardware before changing the concept into a printing release.
+Use the model to review the plant pot, probe position, tank support, dry enclosure and proposed tubing route before choosing hardware and printing. The illustrated pump and tank are reference envelopes, not validated selections.
 
 ## Quick guide
 
-1. Open the [model guide](../../../../../models/README.md).
-2. Inspect the [GLB assembly](../../../../../models/assembly-concept.glb) and four separate STL parts.
-3. Compare the dimensions with the real liner, saucer, probe and board.
-4. Adapt the [OpenSCAD source](../../../../../models/plant-signal.scad), then test a small fit sample before full printing.
+1. Open [the current model guide](../../../../../models/README.md) and [GLB assembly](../../../../../models/assembly-concept.glb).
+2. Inspect five STL components and the [editable source](../../../../../models/plant-signal.scad).
+3. Measure the chosen board, driver, pump, liner, tank and tube fittings.
+4. Revise mounting, ports and retention. Fit-test small samples, then verify water routing and local control on actual hardware.
 
-## Detailed article and current evidence
+## Detailed article and observed digital results
 
-The digital sleeve is Ø144 × 130 mm with a Ø138 mm cavity and 3 mm floor. The electronics base is 100 × 68 × 35 mm; its lid is 3 mm thick. The removable clip has a 6 mm rim gap and a 25 × 3.2 mm probe slot.
+The initial 19 October concept had four printed components. The 26 October revision retains the sleeve, base and probe clip, removes the two indicator openings from the lid and adds a Ø92 × 20 mm reservoir cradle with Ø84 mm cavity. The lid has four fastener holes only. The existing 100 × 68 mm enclosure footprint is not confirmed for the proposed new hardware.
 
-The [geometry report](../../../../../models/mesh-validation.json) records bounds, volume and triangle count. The exported STLs were reloaded and checked for a closed surface, positive volume and one connected solid per part. This does not establish support requirements, material strength, water resistance, dimensional accuracy or hardware fit. The OpenSCAD source was not command-line compiled; the supplied meshes were generated using equivalent Boolean geometry.
+All five exported meshes were reloaded and checked for positive volume, a closed surface and one connected solid. The lid topology has four through-holes. See [the current mesh report](../../../../../models/mesh-validation.json). No print-fit, electrical or hydraulic result exists. OpenSCAD was not command-line compiled; equivalent Boolean geometry produced the supplied STLs.
 
 ## Tips and notes
 
-The sleeve drains through its floor, so use a separate watertight saucer. Keep probe electronics above soil and water. Connector openings and board mounting need actual measurements. The illustrated plant, liner, probe and LEDs are context objects; they are not extra printable parts.
+The tank and saucer must be bought watertight components for the first build. A dry printed cradle is not a tank. Test leaks, siphoning and flow; keep electronics separated. Do not treat the render as a working assembly or claim that a plant has been saved by an unimplemented advice service.
 
 ## Value
 
-The team can review a concrete design and make a measured revision instead of deciding from a picture alone. The next learning contribution should document a real print-fit experiment, including failures.
+The team can trace how a scope change affected real digital artifacts and which assumptions still need measurements. A later contribution should report actual flow and print-fit experiments, including failed attempts.
 
 ## References
 
-- [PlantSignal mechanical concept and limitations](../../../../../models/README.md)
-- [Concept illustration](../../../../../assets/hero.png)
-- [DFRobot SEN0193 documentation](https://wiki.dfrobot.com/sen0193/) — dimensional and electrical reference for one example sensor; verify the actual purchased variant.
+- [Mechanical concept 02](../../../../../models/README.md)
+- [Scope changes](../../../../../docs/SCOPE_CHANGELOG.en.md)
+- [Watering policy and planned tests](../../../../../docs/WATERING_CONTROL.en.md)

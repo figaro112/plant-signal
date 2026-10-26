@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "Project Outcomes"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -133,28 +133,19 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Project Outcomes
+# Project Outcomes — current evidence
 
-## Current state
+**Concept 02, 26 October 2026.** Available outputs are documentation, CAD and renders only.
 
-**Digital concept only.** The following files exist; this is not a claim that the complete device works.
-
-| Available output | Evidence | Limit |
+| Available | Evidence | Limit |
 |---|---|---|
-| Concept and team plan | [Project Summary](../project-summary/index.md) | Team/teacher approval pending |
-| Four mechanical meshes | [CAD and STL files](../../../../../../../models/README.md) | Not printed or fitted |
-| Assembly illustrations | [Concept render](../../../../../../../assets/hero.png) | Plant and electronics are context objects |
-| Digital geometry checks | [Validation data](../../../../../../../models/mesh-validation.json) | Closed, connected meshes; no proof of physical fit or water resistance |
-| STHDF repository structure | [Migration record](../../../../../../../docs/TEMPLATE_MIGRATION.md) | Official project and ST numbers pending |
+| Revised system scope | [Concept 02](../../../../../../../docs/CONCEPT.en.md) | Not a working system |
+| App and architecture proposal | [Architecture](../../../../../../../docs/ARCHITECTURE.en.md) | No app/backend/provider integration |
+| Watering control design | [Policy and planned tests](../../../../../../../docs/WATERING_CONTROL.en.md) | No flow, moisture or hydraulic measurements |
+| Five mechanical meshes | [CAD guide](../../../../../../../models/README.md) | No physical fit/printing test |
+| Solid controller lid and reservoir cradle | [Parts render](../../../../../../../assets/parts-render.png) | Bought tank/pump/tube envelopes are not final selections |
+| Digital mesh checks | [Mesh report](../../../../../../../models/mesh-validation.json) | Closed connected geometry, not proof of physical performance |
 
-## Planned versus delivered
-
-Requirements, preliminary design and documentation have draft digital outputs. Sensor implementation, calibration, physical testing and operation remain **not started**. No experiment results, video demo or final product are available.
-
-## Final product evidence to add later
-
-- Photos of the real assembly and its connections.
-- Actual test conditions, raw values and repeatability results.
-- A short working demo and comparison with the Project Summary.
+There are no implemented readings, automatic doses, mobile screens, notifications, advice API calls, plant-recovery results or completed physical demonstrations. Add real photos, measurements, logs and limitations as implementation proceeds.
 
 [Deliverables](../index.md)

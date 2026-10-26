@@ -50,8 +50,8 @@
         3.0
       ]
     ],
-    "volume_mm3": 20159.9,
-    "triangles": 868
+    "volume_mm3": 20291.7,
+    "triangles": 540
   },
   "sensor-clip": {
     "watertight": true,
@@ -70,5 +70,23 @@
     ],
     "volume_mm3": 5188.0,
     "triangles": 98
+  },
+  "reservoir-cradle": {
+    "watertight": true,
+    "connected_components": 1,
+    "bounds_mm": [
+      [
+        -46.0,
+        -46.0,
+        0.0
+      ],
+      [
+        46.0,
+        46.0,
+        20.0
+      ]
+    ],
+    "volume_mm3": 38714.5,
+    "triangles": 768
   }
 }

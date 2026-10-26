@@ -27,7 +27,7 @@ dao: "sthdf"
 title: "PlantSignal — STHDF project dashboard"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -74,7 +74,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -136,34 +136,30 @@ fm_reserved2: ""
 
 # PlantSignal — STHDF project dashboard
 
-**Project ID: PRJ-TBD-PlantSignal (temporary; no official number assigned).**  
-**Team:** Marek Hužvar · Matuš Plško · Richard Sič  
-**Stage:** concept and digital CAD prototype. Physical assembly and sensing have not been implemented.
+**Concept 02, updated 26 October 2026.** Project number and ST roster IDs remain unassigned; `PRJ-TBD-PlantSignal` is temporary. Team: Marek Hužvar · Matuš Plško · Richard Sič.
 
-![PlantSignal concept](../../../../../assets/hero.png)
+![Concept 02](../../../../../assets/hero.png)
 
-The project proposes a USB-powered desk plant pot with a capacitive soil probe and two LEDs that remind the user to check watering. Watering remains manual. The selected direction is retained provisionally; scope and roles still need team review.
+The active direction is a mobile app linked to sensors and automatic watering from a refillable reservoir. The app holds a plant species/type profile, readings/history, notifications and photo-based care questions through an external API. Product status LEDs have been removed.
 
 ## Seven required deliverables
 
-| # | Section | Current evidence / state |
-|---|---|---|
-| 01 | [About Me](students/about-me/index.md) | Team identified; individual profiles pending |
-| 02 | [Knowledge Contribution](students/knowledge-contribution/index.md) | Two local KNIFE drafts |
-| 03 | [Project Summary](students/project-summary/index.md) | Concept prepared; review pending |
-| 04 | [Project Outcomes](students/project-outcomes/index.md) | Digital concept available; hardware pending |
-| 05 | [Pitch Presentation](students/pitch-presentation/index.md) | Draft outline |
-| 06 | [Final Presentation](students/final-presentation/index.md) | Not started |
-| 07 | [Reflexia / Reflection](students/reflexia/index.md) | Not started |
+1. [About Me](students/about-me/index.md) — team identified; personal profiles pending.
+2. [Knowledge Contribution](students/knowledge-contribution/index.md) — two local KNIFE drafts.
+3. [Project Summary](students/project-summary/index.md) — revised scope and proposed milestones.
+4. [Project Outcomes](students/project-outcomes/index.md) — digital concept evidence only.
+5. [Pitch Presentation](students/pitch-presentation/index.md) — revised outline.
+6. [Final Presentation](students/final-presentation/index.md) — not started.
+7. [Reflexia](students/reflexia/index.md) — to be completed by the actual members.
 
-## Project work
+## Design and work
 
-- [Project dashboard: 7Ds, SDLC and Q12](projects/index.md)
-- [Full concept, components and dimensions](../../../../../docs/CONCEPT.en.md)
-- [CAD files, STL parts and validation limits](../../../../../models/README.md)
-- [Slovak meeting brief](../../../../../docs/PROJECT_BRIEF.sk.md)
-- [Template provenance and migration notes](../../../../../docs/TEMPLATE_MIGRATION.md)
+- [7Ds / SDLC / Q12](projects/index.md)
+- [Current concept](../../../../../docs/CONCEPT.en.md)
+- [Proposed architecture](../../../../../docs/ARCHITECTURE.en.md)
+- [App scope](../../../../../docs/APP_FEATURES.en.md)
+- [Local watering policy and planned tests](../../../../../docs/WATERING_CONTROL.en.md)
+- [CAD and print assumptions](../../../../../models/README.md)
+- [Slovak summary](../../../../../docs/PROJECT_BRIEF.sk.md)
 
-## Before class integration
-
-Ask the teacher for the project number and each student's ST roster ID. Replace the temporary identifier consistently after allocation. Personal profiles and reflections must be completed by the actual members. The teacher handles the class dashboard import; this repository does not push to the template or class repository.
+**Not implemented:** mobile app, firmware, backend, sensor/pump integration, notifications, photo API, physical printing and watering tests. Controller, framework and providers are proposals/open decisions. Class-dashboard integration remains the teacher's process.

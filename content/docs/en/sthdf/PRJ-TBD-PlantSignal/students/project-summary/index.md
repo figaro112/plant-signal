@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "Project Summary — PlantSignal"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "en"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -133,79 +133,65 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# Project Summary — PlantSignal
+# Project Summary — PlantSignal concept 02
 
-## 1. Project identification
+## Identification and team
 
-- **Working identifier:** `PRJ-TBD-PlantSignal`; the teacher has not assigned a project number yet.
-- **Course:** Systemic Thinking in IT & Digital Fabrication, 2026–2027.
-- **Repository:** https://github.com/figaro112/plant-signal (public at the last GitHub verification).
-- **Stage:** concept; not yet approved or physically validated.
+`PRJ-TBD-PlantSignal` is temporary. Course: STHDF 2026–2027. Repository: https://github.com/figaro112/plant-signal. Marek Hužvar, Matuš Plško and Richard Sič are the three members; ST IDs and individual competencies remain to be supplied.
 
-PlantSignal is a desk plant pot concept that uses a capacitive soil probe and red/green LEDs to remind the user to check watering. The physical design combines a purchased liner and saucer with a printed sleeve, removable probe clip and separate controller enclosure.
+## Motivation and goal
 
-## 2. Team
+Connect a physical plant-care prototype to a mobile app and automate routine watering from a user-refilled tank. Provide plant-specific context, sensor history, alerts and access to photo/question-based care guidance. The previous local indicator and manual-watering-only scope are superseded.
 
-| ST ID | Member | Proposed responsibility | Competencies |
-|---|---|---|---|
-| Not assigned | Marek Hužvar | CAD and print preparation | To be supplied by member |
-| Not assigned | Matuš Plško | Electronics and later controller implementation | To be supplied by member |
-| Not assigned | Richard Sič | Calibration, verification and presentation | To be supplied by member |
+## Requested solution
 
-Responsibilities are proposals, not confirmed assignments.
+- Plant profile with selected species/type and linked device.
+- Soil-moisture readings, reservoir/refill state and timestamped history.
+- Automatic watering using a pump and refillable tank, with a locally enforced policy.
+- Mobile notifications and an in-app event log.
+- Photos and questions sent through a backend to an external plant-care API.
+- Printed sleeve, removable probe clip, dry enclosure and reservoir support; no status LEDs or LED openings.
 
-## 3. Motivation
+## Proposed architecture
 
-The concept addresses forgotten watering with a visible reminder and offers a manageable physical project for three students. The team can learn design iteration, sensing and evidence-based validation while producing an object for a desk.
+A Wi-Fi-equipped ESP32 DevKit is a candidate for device control; the exact board is unselected. A backend mediates records, device/app access, push notifications and provider secrets. Watering runs locally with confirmed configuration and valid sensors, independent of the phone or photo service. Advice does not directly operate the pump.
 
-## 4. Goal and added value
+[Architecture](../../../../../../../docs/ARCHITECTURE.en.md) · [Watering behavior](../../../../../../../docs/WATERING_CONTROL.en.md) · [Mobile features](../../../../../../../docs/APP_FEATURES.en.md)
 
-The intended MVP is one assembled pot reminder, calibrated for a selected plant and substrate, with documented limitations. Success would mean reproducibly distinguishing the chosen dry and watered reference conditions, a stable indicator and a mechanically usable assembly. Exact thresholds and acceptance tolerances will be agreed after initial measurements.
+## Suggested workstreams — not confirmed assignments
 
-## 5. Proposed solution
+| Member | Proposed focus |
+|---|---|
+| Marek Hužvar | Mechanical CAD, tank/tubing layout and physical integration |
+| Matuš Plško | Controller, sensors, pump driver and device communications |
+| Richard Sič | Mobile/backend integration, notifications and plant-care API |
 
-- Purchased plant liner and watertight saucer.
-- Four printed components: sleeve, probe clip, enclosure base and lid.
-- Proposed Arduino Uno R3, capacitive analog probe, two LEDs and USB power.
-- Manual watering; no pump, app, Wi-Fi or cloud in the first version.
+Everyone shares integration, measurements and documentation. Rebalance the app/backend workload when agreeing the implementation stack.
 
-[Full concept and component list](../../../../../../../docs/CONCEPT.en.md)
+## Milestones
 
-## 6. Project plan
-
-| Milestone | Deliverable | Current state |
+| Milestone | Intended evidence | State |
 |---|---|---|
-| M1 | Agree scope, assign roles and identify available hardware | Pending |
-| M2 | Measure components and revise CAD | Digital first concept exists; real measurements pending |
-| M3 | Bench-test the chosen probe and LEDs | Not started |
-| M4 | Print, assemble and calibrate | Not started |
-| M5 | Repeat tests, publish KNIFEs and demonstrate | Not started |
+| M1 — scope and parts | Agree stack, providers, budget and measured hardware | Open |
+| M2 — connected readings | One device and plant profile with timestamped sensor data | Not started |
+| M3 — bounded watering | Flow calibration, low-water stop, dosing/settling and fault tests | Not started |
+| M4 — app services | History, notifications, photos and external advice responses | Not started |
+| M5 — complete prototype | Revised prints, integrated demo and real test records | Not started |
 
-Weekly capacity, milestone dates and the final deadline must be agreed with the team and teacher; no commitment is invented here.
+Dates, weekly capacity and the final course deadline are not supplied. The order stages the work; it does not remove requested features from the target system.
 
-## 7. User and value
+## Value, outcomes and acceptance
 
-The intended user keeps one small plant on a desk and wants a visible reminder. The project can also demonstrate fabrication and measurement in the lab. Demand, willingness to pay and market advantage have not been researched.
+The intended user refills the reservoir during the normal watering routine, sees care status in the app and can request advice. Other plant care can still require human action. Market demand, willingness to pay and rescue effectiveness have not been tested.
 
-## 8. Expected outputs
-
-- One physical prototype, if the project proceeds.
-- Editable CAD, exported STL parts and assembly visuals.
-- A documented sensor experiment and calibrated reminder.
-- Team documentation, KNIFE contributions, presentation and individual reflections.
-
-## Context and references
-
-- [Digital CAD concept KNIFE](../../../../knifes/K-LOCAL-001-PlantSignal-3D-Concept/index.md)
-- [DFRobot probe documentation](https://wiki.dfrobot.com/sen0193/) — an example sensor, not a claim that all generic V1.2 probes have the same specifications.
-- [Course repository setup guide](https://knifes.systemthinking.sk/sk/knifes/K000119-klon-triedneho-repozitara/).
+Success should include calibrated readings, a demonstrated bounded water dose, empty-tank inhibition, useful timestamped mobile history, a tested notification path and a real or clearly unavailable photo-API response. A CAD render or mock data alone is not an end-to-end result.
 
 ## Risks and dependencies
 
-Actual hardware and printer access are unconfirmed. Probe readings depend on substrate and placement. The controller and sensor electronics must stay outside water exposure. The current enclosure and clip are dimension assumptions, not demonstrated fits. The team should verify project overlap with classmates before committing to implementation.
+The scope now includes mechanics, embedded control, networking, backend, mobile and an external service. Controller/pump compatibility, voltage levels, flow, substrate calibration, leakage/siphoning, stale data, offline operation, push permissions and API capability/cost must be resolved. Exact numeric limits require experiments. Provider credentials stay out of the app/device/repository.
 
-## 9. Learning and next step
+## Next step
 
-Review this summary, confirm the project direction, check lab stock and choose the actual liner, saucer, controller and probe. Possible extensions belong after the first reminder works reliably.
+Agree the first mobile platform and framework, choose actual hardware and a photo-capable advice provider, and measure components before printing. Then prove sensing and local dosing before full integration.
 
 [Deliverables](../index.md)

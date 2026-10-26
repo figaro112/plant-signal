@@ -26,7 +26,7 @@ dao: "sthdf"
 title: "PlantSignal — slovenský rozcestník"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "PlantSignal student project: concept and documentation; physical verification pending."
+description: "PlantSignal concept 02: mobile plant care, connected sensors and automatic watering; not implemented."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -73,7 +73,7 @@ locale: "sk"
 created: "2026-10-19 14:19"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-19 14:19"
+modified: "2026-10-26"
 
 # Stav dokumentu – default "backlog"
 status: "inprogress"
@@ -135,14 +135,15 @@ fm_reserved2: ""
 
 # PlantSignal — slovenský rozcestník
 
-**Tím:** Marek Hužvar, Matuš Plško, Richard Sič.  
-**Označenie:** PRJ-TBD-PlantSignal je dočasné; číslo projektu ani ST čísla zatiaľ neboli pridelené.
+**Aktívny koncept 02, 26. októbra 2026.** Marek Hužvar, Matuš Plško a Richard Sič. Číslo projektu ani ST čísla zatiaľ neboli pridelené.
 
-Zatiaľ zostávame pri nápade kvetináča so svetelným upozornením na suchý substrát. Máme digitálny koncept a 3D súbory. Snímač, zapojenie, tlač a meranie ešte neboli realizované.
+Vyvíjať chceme mobilnú aplikáciu pre rastlinu so senzormi, profilom druhu rastliny, upozorneniami, fotkami a radami cez externé API. Kvetináč bude automaticky zalievaný z nádržky; používateľ dopĺňa vodu. LED signalizáciu na kvetináči rušíme.
 
-- [Hlavný projektový dashboard v angličtine](../../../en/sthdf/PRJ-TBD-PlantSignal/index.md)
-- [Sedem povinných sekcií](../../../en/sthdf/PRJ-TBD-PlantSignal/students/index.md)
-- [Slovenské zhrnutie na stretnutie](../../../../../docs/PROJECT_BRIEF.sk.md)
-- [3D prototyp a STL súbory](../../../../../models/README.md)
+Máme návrh a aktualizované digitálne 3D diely, nie fungujúcu aplikáciu ani zalievanie. Doska, mobilný framework, poskytovateľ API a parametre čerpadla ešte nie sú vybrané.
 
-Angličtina je hlavný jazyk finálnej projektovej dokumentácie. Osobné profily a reflexie doplnia samotní členovia. Prenos do triedneho dashboardu rieši vyučujúci; tento repozitár zostáva samostatný.
+- [Anglický projektový dashboard](../../../en/sthdf/PRJ-TBD-PlantSignal/index.md)
+- [Slovenské zhrnutie](../../../../../docs/PROJECT_BRIEF.sk.md)
+- [Podrobný koncept](../../../../../docs/CONCEPT.en.md)
+- [3D modely](../../../../../models/README.md)
+
+Osobné profily a reflexie doplnia členovia; triedny import rieši vyučujúci.
